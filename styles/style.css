@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #4A4B4F;
+}
+
+h1, h2, h3, p, a, li, h4 {
+  color: #e1e1e1;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "montserrat", serif;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-family: "montserrat", serif;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-family: "source sans pro", serif;
+}
+
+p, a, li {
+  font-size: 1.8rem;
+  font-family: "source sans pro", serif;
+}
