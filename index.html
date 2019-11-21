@@ -7,49 +7,71 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="project" href="project.html">
-    <link rel="About" href="about.html">
   </head>
   <body>
     <div class="container">
       <header>
         <nav>
           <img src="images/logo.png" class="my-logo" alt="Sean's logo">
-          <a href="about.html">
-            <img src="images/hamburger.png" Class="menu" alt="menu bar">
-          </a>
+          <div class="hamburger mobile-only">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="project.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+<!--          <div class="deskburger desktop-only">
+            <hr class="menu-line">
+            <hr class="menu-line2">
+            <hr class="menu-line3">
+          </div> -->
         </nav>
       </header>
       <main class="content">
         <section class="hero">
-          <div>
-            <h1 class="light">Sean Valenzuela</h1>
-            <h4 class="light">UX <font color="#FE5757">|</font> UI Designer</h4>
-            <p class="light">Hey I’m Sean. I’m a web designer with a background in marketing and finance. I’m passionate about minimal designs and great user experiences.</p>
+          <div class="sun">
+          </div>
+          <div class="home-box">
+            <h1 class="light right">Sean Valenzuela</h1>
+            <h4 class="light right bottom-margin-small">UX <font color="#FE5757">|</font> UI Designer</h4>
+            <p class="light home-intro bottom-margin-small">Hey I’m Sean. I’m a web designer with a background in marketing and finance. I’m passionate about minimal designs and great user experiences.</p>
+          </div>
+          <div class="mnts-desktop">
+            <img src="images/mnts.png" alt="Mountains illustration">
           </div>
           <div class="cactus">
             <img src="images/cactus.png" alt="Cactus illustration">
           </div>
           <hr class="cactus-line">
+          <div class="arrow">
+            <img src="images/triangles.png" alt="triangles">
+          </div>
         </section>
         <section class="Case-studies">
-          <article class="project Sky-Saves">
-            <a href="project.html" title="Sky Saves Case Study">
-              <div>
-                <img src="images/Sky Saves logo.png" alt="Sky Saves logo">
-                <p class="light">Where the forest meets the cloud</p>
-              </div>
-            </a>
-          </article>
-          <article class="project Project-2">
-            <p class="light">Project 2</p>
-          </article>
-          <article class="project Project-3">
-            <p class="light">Project 3</p>
-          </article>
-          <article class="project Project-4">
-            <p class="light">Project 4</p>
-          </article>
+          <div class="arrow2">
+            <img src="images/triangles2.png" alt="triangles">
+          </div>
+          <div class="projects">
+            <article class="project Sky-Saves">
+              <a href="project.html" title="Sky Saves Case Study">
+                <div>
+                  <img src="images/Sky Saves logo.png" alt="Sky Saves logo">
+                  <p class="light">Where the forest meets the cloud</p>
+                </div>
+              </a>
+            </article>
+            <article class="project Project-2">
+              <p class="light">Project 2</p>
+            </article>
+            <article class="project Project-3">
+              <p class="light">Project 3</p>
+            </article>
+            <article class="project Project-4">
+              <p class="light">Project 4</p>
+            </article>
+          </div>
         </section>
       </main>
       <div class="mnts">
@@ -80,5 +102,6 @@
         </ul>
       </footer>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

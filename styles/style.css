@@ -10,7 +10,7 @@ body {
   background-color: #4A4B4F;
 }
 
-h1, h2, h3, p, .slogan {
+h1, h2, h3, h4, p, .slogan {
   color: #4A4B4F;
   margin: 0 auto;
   width: 33rem;
@@ -56,6 +56,10 @@ p, a {
   font-weight: 400;
 }
 
+.home-intro {
+  font-weight: lighter;
+}
+
 p {
   margin: 0 auto;
 }
@@ -70,24 +74,112 @@ a {
 }
 
 /* Navigation Bar specific*/
+
+/*
+.hamburger {
+  color: #FE5757;
+  font-size: 2.4rem;
+  display: block;
+  float: right;
+  line-height: 6rem;
+  cursor: pointer;
+}
+
+header {
+  background: color: #4A4B4F;
+  padding: 0 2rem;
+}
+
+header nav {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 6rem);
+  background-color: #333;
+  top: 6rem;
+  left: 0;
+  transition: 0.5s;
+}
+
+nav ul {
+  display: none;
+  float: right;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  display: block;
+  font-family: "source sans pro" sans-serif;
+  font-weight: lighter;
+  height: 6rem;
+  line-height: 6rem;
+  padding: 0 2rem;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #FE5757;
+  color: #fff;
+}
+
+.menu a:active {
+  background-color: #FE5757;
+  color: #fff;
+}
+*/
+
 nav {
   background-color: #4A4B4F;
   border-bottom: .2rem solid #2587FB;
   height: 6rem;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .my-logo {
   float: left;
-  margin-left: 3rem;
+  margin-left: 10%;
 }
 
 .menu {
   float: right;
-  margin-top: 2.25rem;
-  margin-right: 3rem;
+}
+
+.nav a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  font-size: 18rem;
+}
+
+.active {
+  background-color: #FE5757;
+  color: white;
+}
+
+.nav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.nav a:hover {
+  background-color: #555;
+  color: white;
 }
 
 /* Footer specific */
@@ -101,7 +193,7 @@ footer ul {
   width: 100%;
 }
 
-li a {
+.footmedia li a{
   color: #e1e1e1;
   font-size: 3rem;
   padding: 3rem;
@@ -109,8 +201,20 @@ li a {
 
 /* Home page specific */
 
-.hero {
+  .hero {
   margin: 12rem 0 3rem;
+}
+
+.mnts-desktop {
+  display: none;
+}
+
+.arrow {
+  display: none;
+}
+
+.arrow2 {
+  display: none;
 }
 
 .cactus-line {
@@ -118,7 +222,6 @@ li a {
 }
 
 .cactus {
-  margin-top: 1rem;
   margin-left: 60%;
   margin-bottom: -1.1rem;
 }
@@ -194,6 +297,10 @@ li a {
   margin-bottom: 3rem;
 }
 
+.desktop-only {
+  display: none;
+}
+
 .centerli {
   color: #4A4B4F;
   font-size: 1.8rem;
@@ -223,6 +330,7 @@ li a {
 
 .skynav, .skyfoot {
   border: none;
+  z-index: 1;
 }
 
 /* About page specific */
@@ -234,6 +342,7 @@ li a {
   background-color: #ffffff;
   padding-top: 11rem;
   padding-bottom: 6rem;
+  margin-right: 2%;
   width: 100%;
 }
 
@@ -243,7 +352,7 @@ li a {
   margin-bottom: -16.5rem;
 }
 
-.blue-box {
+.profile-background {
   background-color: #2587FB;
   border-radius: 5px 5px 0 0;
   height: 8.2rem;
@@ -262,4 +371,391 @@ li a {
  padding-left: 60%;
  padding-top: 3rem;
  margin-bottom: -6.5rem;
+}
+
+/* For Tablets: */
+@media only screen and (min-width: 600px) {
+
+  .right {
+    margin-right: 15.3rem;
+  }
+
+  .home-intro {
+    width: 40rem;
+  }
+
+  .sun {
+    height: 5%;
+    width: 5%;
+    border: .2rem solid #2587FB;
+    border-radius: 100%;
+    margin-left: -50rem;
+    margin-top: -50rem;
+    z-index: -1;
+  }
+
+/* About Page Tablet */
+  .about-content {
+    border: .2rem solid #2587FB;
+    border-radius: 5px;
+    margin: 12rem auto 12rem;
+    padding-top: 6rem;
+    width: 88%;
+  }
+
+  .aboutme {
+    background-color: #ffffff;
+    margin: auto;
+    padding-top: 11rem 5% 6rem;
+    width: 90%;
+  }
+
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -16.5rem;
+  }
+
+  .profile-background {
+    background-color: #2587FB;
+    border-radius: 5px 5px 0 0;
+    height: 8.2rem;
+    width: 18rem;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  .hike {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+
+  .prickly {
+    margin-bottom: -12.7rem;
+  }
+
+  .blue-square {
+    border: .2rem solid #2587FB;
+    border-radius: 5px;
+    height: 34.5rem;
+    width: 34.5rem;
+    margin-left: -30rem;
+    margin-top: 4rem;
+    z-index: -2;
+  }
+
+
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  h1, h2, h3, h4, p, .slogan {
+    color: #4A4B4F;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .home-box h1 {
+  width: 50rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  .sun {
+    height: 60rem;
+    width: 60rem;
+    border: .2rem solid #2587FB;
+    border-radius: 100%;
+    margin-left: -35rem;
+    margin-top: -70rem;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .mnts {
+    display: none;
+  }
+
+  .mnts-desktop {
+    display: flex;
+    margin-left: 8%;
+    margin-bottom: -10.5rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: color: #4A4B4F;
+    width: 100%
+  }
+
+  nav {
+    border: none;
+  }
+
+  header nav {
+    float: right;
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 10%;
+    list-style: none;
+  }
+
+  .menu a {
+    color: #fff;
+    display: block;
+    font-family: "source sans pro" sans-serif;
+    font-weight: lighter;
+    height: 6rem;
+    line-height: 6rem;
+    padding: 0 2rem;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    background-color: #FE5757;
+    color: #fff;
+  }
+
+  .menu a:active {
+    background-color: #FE5757;
+    color: #fff;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .home-intro {
+    font-size: 2rem;
+    padding-top: 10%;
+    width: 45rem;
+  }
+
+  .hero {
+    border: .2rem solid #2587FB;
+    border-radius: 5px;
+    position: relative;
+    margin: 6rem 6%;
+    width: 88%;
+    padding-top: 40%;
+    z-index: -1;
+  }
+
+  .home-box {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .cactus-line {
+    border: none;
+  }
+
+  .cactus {
+    margin-bottom: -2.8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow {
+    display: flex;
+    margin-bottom: -2.5rem;
+    margin-left: 55%;
+  }
+
+  .arrow2 {
+    display: flex;
+    margin-top: -2.5rem;
+    margin-left: 45%;
+  }
+
+  .Case-studies {
+    border: .2rem solid #2587FB;
+    border-radius: 5px;
+    margin: 6rem 6%;
+    height: 60rem;
+    width: 88%;
+    z-index: -1;
+  }
+
+  .projects {
+    margin: 5% auto;
+    width: 66rem;
+  }
+
+  .project {
+    display: block;
+    float: left;
+    margin: 1%;
+  }
+
+}
+/* Sky Saves Desktop */
+@media only screen and (min-width: 900px) {
+  .Sky-Saves-content {
+    margin: 0 auto;
+    width: 90rem;
+  }
+
+  .bottom-margin-small {
+    margin-bottom: 6rem;
+  }
+
+  .one-column {
+    display: grid;
+    grid-template-columns: 90rem;
+  }
+
+  .two-column {
+    display: grid;
+    grid-template-columns: 45rem 45rem;
+  }
+
+  .three-column {
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+  }
+
+  .sky-left, .sky-right {
+    width: 37.5rem;
+  }
+
+  .sky-align {
+    margin-left: 17rem;
+  }
+
+  .brand-align {
+    margin-left: 3.8rem;
+  }
+
+  .desktop-only {
+    display: flex;
+    margin-bottom: 6rem;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .wide {
+    width: 56rem;
+  }
+
+  .sky-left {
+    margin-left: 3rem;
+    margin-right: 4.5rem;
+    position: relative;
+  }
+
+  .sky-right {
+    margin-right: 3rem;
+    margin-left: 4.5rem;
+    position: relative;
+  }
+
+  .three-column h3 {
+    width: 30rem;
+  }
+
+  .three-column ul {
+    width: 30rem;
+  }
+
+  .style-guide {
+    grid-column-start: 2;
+    margin-top: -23rem;
+  }
+
+}
+/* For About desktop: */
+@media only screen and (min-width: 1025px) {
+  .about-content {
+    border: .2rem solid #2587FB;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 6rem;
+    width: 88%;
+  }
+
+  .aboutme {
+    background-color: #ffffff;
+    grid-column-start: 2;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    margin-right: 10rem;
+    margin-top: 9rem;
+    width: 90%;
+    z-index: -1;
+  }
+
+  .aboutme h3, .aboutme p {
+    width: 80%
+  }
+
+  .profile-pic-box {
+    position: absolute;
+    right: 25%;
+    top: 14.3rem;
+  }
+
+  .profile-background {
+    background-color: #2587FB;
+    border-radius: 5px 5px 0 0;
+    height: 8.2rem;
+    width: 18rem;
+    z-index: -1;
+  }
+
+  .hike {
+    grid-column-start: 1;
+    margin-top: -60rem;
+    margin-left: 2%;
+  }
+
+  .blue-square {
+    border: .2rem solid #2587FB;
+    border-radius: 5px;
+    height: 34.5rem;
+    width: 34.5rem;
+    margin-left: -30rem;
+    margin-top: 4rem;
+    z-index: -2;
+  }
+
+  .prickly {
+    grid-column-start: 1;
+    margin-bottom: -.5rem;
+  }
+}
+/* For wide desktop: */
+@media only screen and (min-width: 1440px) {
+  .container {
+    margin: auto;
+    width: 144rem;
+  }
+
+  .Sky-Saves-content {
+    width: 90rem;
+  }
+
+  nav {
+    width: 144rem;
+  }
+
 }
