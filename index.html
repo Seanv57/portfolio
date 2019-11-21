@@ -4,29 +4,27 @@
     <meta charset="utf-8">
     <title>Portfolio | Sean Valenzuela</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header>
         <nav>
           <img src="images/logo.png" class="my-logo" alt="Sean's logo">
-          <div class="hamburger mobile-only">
-            <i class="fas fa-bars"></i>
+          <div class="menu">
+            <a href="project.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <i class="fas fa-bars mobile-only no-tab"></i>
           </div>
-          <ul class="menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="project.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-<!--          <div class="deskburger desktop-only">
+          <div class="deskburger desktop-only">
             <hr class="menu-line">
             <hr class="menu-line2">
             <hr class="menu-line3">
-          </div> -->
+          </div>
         </nav>
       </header>
       <main class="content">
@@ -38,28 +36,18 @@
             <h4 class="light right bottom-margin-small">UX <font color="#FE5757">|</font> UI Designer</h4>
             <p class="light home-intro bottom-margin-small">Hey I’m Sean. I’m a web designer with a background in marketing and finance. I’m passionate about minimal designs and great user experiences.</p>
           </div>
-          <div class="mnts-desktop">
-            <img src="images/mnts.png" alt="Mountains illustration">
-          </div>
-          <div class="cactus">
-            <img src="images/cactus.png" alt="Cactus illustration">
-          </div>
+          <img src="images/mnts.png" class="mnts-desktop" alt="Mountains illustration">
+          <img src="images/cactus.png" class="cactus" alt="Cactus illustration">
           <hr class="cactus-line">
-          <div class="arrow">
-            <img src="images/triangles.png" alt="triangles">
-          </div>
+          <img src="images/triangles.png" class="arrow" alt="triangles">
         </section>
         <section class="Case-studies">
-          <div class="arrow2">
-            <img src="images/triangles2.png" alt="triangles">
-          </div>
+            <img src="images/triangles2.png" class="arrow2" alt="triangles">
           <div class="projects">
             <article class="project Sky-Saves">
               <a href="project.html" title="Sky Saves Case Study">
-                <div>
-                  <img src="images/Sky Saves logo.png" alt="Sky Saves logo">
-                  <p class="light">Where the forest meets the cloud</p>
-                </div>
+                <img src="images/Sky Saves logo.png" alt="Sky Saves logo">
+                <p class="light">Where the forest meets the cloud</p>
               </a>
             </article>
             <article class="project Project-2">
@@ -74,9 +62,7 @@
           </div>
         </section>
       </main>
-      <div class="mnts">
-          <img src="images/mnts.png" alt="Mountains illustration">
-      </div>
+      <img src="images/mnts.png" class="mnts" alt="Mountains illustration">
       <footer>
         <ul class="footmedia">
           <li>

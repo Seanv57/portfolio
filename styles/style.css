@@ -140,6 +140,7 @@ nav {
   overflow: hidden;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
 }
@@ -160,12 +161,7 @@ nav {
   text-align: center;
   padding: 1.4rem 1.6rem;
   text-decoration: none;
-  font-size: 18rem;
-}
-
-.active {
-  background-color: #FE5757;
-  color: white;
+  font-size: 1.8rem;
 }
 
 .nav .icon {
@@ -201,8 +197,12 @@ footer ul {
 
 /* Home page specific */
 
-  .hero {
-  margin: 12rem 0 3rem;
+.hero {
+margin: 12rem 0 3rem;
+}
+
+.project p {
+  width: 31.5rem;
 }
 
 .mnts-desktop {
@@ -252,12 +252,6 @@ footer ul {
 .Project-4 {
   border: .2rem solid #2587FB;
   padding-top: 4rem;
-}
-
-.mnts {
-  display: flex;
-  justify-content: center;
-  margin-bottom: -1rem;
 }
 
 /* Sky Saves Case Study specific */
@@ -384,6 +378,10 @@ footer ul {
     width: 40rem;
   }
 
+  .no-tab {
+    display: none;
+  }
+
   .sun {
     height: 5%;
     width: 5%;
@@ -456,6 +454,7 @@ footer ul {
 
   h1 {
     font-size: 5rem;
+    font-weight: lighter;
   }
 
   .home-box h1 {
@@ -534,6 +533,30 @@ footer ul {
     color: #fff;
   }
 
+  .deskburger {
+    display: block;
+    float: right;
+    margin-right: -26%;
+    margin-top: 4rem;
+  }
+
+  .menu-line {
+    border: .1rem solid #FE5757;
+    margin-left: 5rem;
+    width: 4rem;
+  }
+
+  .menu-line2 {
+    border: .1rem solid #FE5757;
+    margin-left: 5rem;
+    width: 4rem;
+  }
+
+  .menu-line3 {
+    border: .1rem solid #FE5757;
+    margin-left: 5rem;
+    width: 4rem;
+  }
   .right {
     text-align: right;
   }
@@ -568,8 +591,7 @@ footer ul {
 
   .cactus {
     margin-bottom: -2.8rem;
-    display: flex;
-    justify-content: center;
+    margin-left: 75%;
   }
 
   .arrow {
@@ -698,7 +720,7 @@ footer ul {
     grid-column-start: 2;
     padding-top: 12rem;
     padding-bottom: 6rem;
-    margin-right: 10rem;
+    margin-right: 3rem;
     margin-top: 9rem;
     width: 90%;
     z-index: -1;
