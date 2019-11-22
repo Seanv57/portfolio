@@ -56,10 +56,6 @@ p, a {
   font-weight: 400;
 }
 
-.home-intro {
-  font-weight: lighter;
-}
-
 p {
   margin: 0 auto;
 }
@@ -75,51 +71,50 @@ a {
 
 /* Navigation Bar specific*/
 
-/*
-.hamburger {
-  color: #FE5757;
-  font-size: 2.4rem;
-  display: block;
-  float: right;
-  line-height: 6rem;
-  cursor: pointer;
-}
-
-header {
-  background: color: #4A4B4F;
-  padding: 0 2rem;
-}
-
-header nav {
-  position: absolute;
-  width: 100%;
-  height: calc(100vh - 6rem);
-  background-color: #333;
-  top: 6rem;
+nav {
+  background-color: #4A4B4F;
+  border-bottom: .2rem solid #2587FB;
+  height: 6rem;
+  position: fixed;
+  top: 0;
   left: 0;
-  transition: 0.5s;
+  width: 100%;
+  z-index: 1;
 }
 
-nav ul {
-  display: none;
+.my-logo {
+  float: left;
+  margin-left: 8%;
+}
+
+label {
+  color: #FE5757;
+  cursor: pointer;
+  display: block;
+  font-size: 3rem;
   float: right;
-}
-.menu {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
+  margin-right: 8%;
+  margin-top: 1.5rem;
 }
 
+label:hover {
+  color: #834040;
+}
+
+.menu {
+  display: none;
+}
+
+/*
 .menu a {
   color: #fff;
-  display: block;
   font-family: "source sans pro" sans-serif;
   font-weight: lighter;
-  height: 6rem;
+  height: 4.8rem;
   line-height: 6rem;
-  padding: 0 2rem;
-  text-decoration: none;
+  padding-right: 8%;
+  text-align: right;
+  width: 100%
 }
 
 .menu a:hover {
@@ -131,52 +126,8 @@ nav ul {
   background-color: #FE5757;
   color: #fff;
 }
+
 */
-
-nav {
-  background-color: #4A4B4F;
-  border-bottom: .2rem solid #2587FB;
-  height: 6rem;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.my-logo {
-  float: left;
-  margin-left: 10%;
-}
-
-.menu {
-  float: right;
-}
-
-.nav a {
-  float: right;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem 1.6rem;
-  text-decoration: none;
-  font-size: 1.8rem;
-}
-
-.nav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-.nav a:hover {
-  background-color: #555;
-  color: white;
-}
 
 /* Footer specific */
 footer ul {
@@ -189,13 +140,17 @@ footer ul {
   width: 100%;
 }
 
-.footmedia li a{
+.footmedia li a {
   color: #e1e1e1;
   font-size: 3rem;
   padding: 3rem;
 }
 
 /* Home page specific */
+
+.content {
+  position: relative;
+}
 
 .hero {
 margin: 12rem 0 3rem;
@@ -327,9 +282,17 @@ margin: 12rem 0 3rem;
   z-index: 1;
 }
 
+.skynav label{
+  margin-top: 1rem;
+}
+
 /* About page specific */
 .about-content {
   margin: 12rem 0 6rem;
+}
+
+.about-nav label{
+  margin-top: 1rem;
 }
 
 .aboutme {
@@ -378,18 +341,47 @@ margin: 12rem 0 3rem;
     width: 40rem;
   }
 
-  .no-tab {
-    display: none;
+  nav {
+    border: none;
+    border-bottom: .2rem solid #2587FB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4A4B4F;
+    width: 100%;
+    z-index: 1;
   }
 
-  .sun {
-    height: 5%;
-    width: 5%;
-    border: .2rem solid #2587FB;
-    border-radius: 100%;
-    margin-left: -50rem;
-    margin-top: -50rem;
-    z-index: -1;
+  .menu {
+    display: block;
+    float: right;
+    margin-right: 8%;
+    list-style: none;
+  }
+
+  .menu a {
+    border-bottom: .2rem solid #FE5757;
+    color: #e1e1e1;
+    font-family: "source sans pro" sans-serif;
+    font-weight: lighter;
+    height: 4.8rem;
+    line-height: 6rem;
+    margin: 0 2rem;
+    padding-right:1rem;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    color: #FE5757;
+  }
+
+  .menu a:active {
+    background-color: #FE5757;
+    color: #fff;
+  }
+
+  .no-tab {
+    display: none;
   }
 
 /* About Page Tablet */
@@ -443,7 +435,6 @@ margin: 12rem 0 3rem;
     z-index: -2;
   }
 
-
 }
 
 /* For desktop: */
@@ -454,16 +445,21 @@ margin: 12rem 0 3rem;
 
   h1 {
     font-size: 5rem;
-    font-weight: lighter;
+    font-weight: 100;
   }
 
   .home-box h1 {
-  width: 50rem;
+    width: 50rem;
   }
 
   h4 {
     font-size: 2.4rem;
   }
+
+  .about-nav {
+    border-bottom: .2rem solid #2587FB;
+  }
+
 
   .sun {
     height: 60rem;
@@ -486,40 +482,32 @@ margin: 12rem 0 3rem;
     margin-bottom: -10.5rem;
   }
 
-  .hamburger {
-    display: none;
-  }
-
-  header {
-    position: absolute;
+  nav {
+    border: none;
+    position: fixed;
     top: 0;
     left: 0;
     background: color: #4A4B4F;
-    width: 100%
-  }
-
-  nav {
-    border: none;
-  }
-
-  header nav {
-    float: right;
+    width: 100%;
+    z-index: 1;
   }
 
   .menu {
     display: flex;
-    margin-right: 10%;
+    margin-right: 8%;
     list-style: none;
   }
 
   .menu a {
-    color: #fff;
+    border-bottom: .2rem solid #FE5757;
+    color: #e1e1e1;
     display: block;
     font-family: "source sans pro" sans-serif;
     font-weight: lighter;
-    height: 6rem;
+    height: 4.8rem;
     line-height: 6rem;
-    padding: 0 2rem;
+    margin: 0 2rem;
+    padding-right:1rem;
     text-decoration: none;
   }
 
@@ -533,30 +521,6 @@ margin: 12rem 0 3rem;
     color: #fff;
   }
 
-  .deskburger {
-    display: block;
-    float: right;
-    margin-right: -26%;
-    margin-top: 4rem;
-  }
-
-  .menu-line {
-    border: .1rem solid #FE5757;
-    margin-left: 5rem;
-    width: 4rem;
-  }
-
-  .menu-line2 {
-    border: .1rem solid #FE5757;
-    margin-left: 5rem;
-    width: 4rem;
-  }
-
-  .menu-line3 {
-    border: .1rem solid #FE5757;
-    margin-left: 5rem;
-    width: 4rem;
-  }
   .right {
     text-align: right;
   }
@@ -629,6 +593,7 @@ margin: 12rem 0 3rem;
 }
 /* Sky Saves Desktop */
 @media only screen and (min-width: 900px) {
+
   .Sky-Saves-content {
     margin: 0 auto;
     width: 90rem;
@@ -706,6 +671,11 @@ margin: 12rem 0 3rem;
 }
 /* For About desktop: */
 @media only screen and (min-width: 1025px) {
+
+  .about-nav {
+    border-bottom: 0;
+  }
+
   .about-content {
     border: .2rem solid #2587FB;
     border-radius: 5px;
