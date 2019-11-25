@@ -4,20 +4,27 @@
     <meta charset="utf-8">
     <title>Sky Saves Case Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header>
-      <nav class="skynav">
-        <img src="images/logo.png" class="my-logo" alt="Sean's logo">
-        <label class="mobile-only no-tab" for="toggle">&#9776;</label>
-        <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="#">Contact</a>
+    <header class="skynav">
+      <img src="images/logo.png" class="my-logo" alt="Sean's logo">
+      <ul class="tab-only">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <nav>
+        <div class="icon" onclick="toggleCls()">
+          <i class="fa fa-bars"></i>
         </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <main class="Sky-Saves-Case-Study">
@@ -279,5 +286,6 @@
         </li>
       </ul>
     </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
