@@ -276,6 +276,7 @@ margin: 12rem 0 3rem;
   font-family: "source sans pro", serif;
   font-weight: 400;
   line-height: 2.6rem;
+  list-style: disc;
   margin: 0 auto;
   width: 33rem;
 }
@@ -379,7 +380,16 @@ margin: 12rem 0 3rem;
     display: none;
   }
 
+  .footmedia li a {
+    padding: 6rem
+    ;
+  }
+
 /* About Page Tablet */
+  .about-nav {
+    border-bottom: 0;
+  }
+
   .about-content {
     border: .2rem solid #2587FB;
     border-radius: 5px;
@@ -440,7 +450,6 @@ margin: 12rem 0 3rem;
 
   h1 {
     font-size: 5rem;
-    font-weight: 100;
   }
 
   .home-box h1 {
@@ -450,11 +459,6 @@ margin: 12rem 0 3rem;
   h4 {
     font-size: 2.4rem;
   }
-
-  .about-nav {
-    border-bottom: .2rem solid #2587FB;
-  }
-
 
   .sun {
     height: 60rem;
@@ -525,13 +529,13 @@ margin: 12rem 0 3rem;
   .arrow {
     display: flex;
     margin-bottom: -2.5rem;
-    margin-left: 55%;
+    margin-left: 52%;
   }
 
   .arrow2 {
     display: flex;
     margin-top: -2.5rem;
-    margin-left: 45%;
+    margin-left: 42%;
   }
 
   .Case-studies {
@@ -635,11 +639,6 @@ margin: 12rem 0 3rem;
 }
 /* For About desktop: */
 @media only screen and (min-width: 1025px) {
-
-  .about-nav {
-    border-bottom: 0;
-  }
-
   .about-content {
     border: .2rem solid #2587FB;
     border-radius: 5px;
