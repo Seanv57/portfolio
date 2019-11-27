@@ -335,6 +335,36 @@ margin: 12rem 0 3rem;
  margin-bottom: -6.5rem;
 }
 
+/* Contact: */
+.contact-info {
+  display: block;
+  float: left;
+  margin-top: 12rem;
+}
+
+.contact-info h1 {
+    font-size: 3.2rem;
+    line-height: 5rem;
+    margin-left: 5%;
+    width: 0;
+}
+
+.contact-info a {
+  font-family: "source sans pro" sans-serif;
+  color: #e1e1e1;
+  line-height: 3rem;
+  margin-left: 5%;
+}
+
+.contact-info a:hover {
+  color: #FE5757;
+}
+
+.contact-pic {
+  margin: 6rem 5%;
+  width: 90%;
+  z-index: -1;
+}
 /* For Tablets: */
 @media only screen and (min-width: 600px) {
 

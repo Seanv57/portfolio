@@ -2,13 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Sean Valenzuela About Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="project" href="project.html">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -17,7 +20,7 @@
         <ul class="tab-only">
           <li><a href="index.html">Home</a></li>
           <li><a href="project.html">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <nav>
           <div class="icon" onclick="toggleCls()">
@@ -26,7 +29,7 @@
           <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="project.html">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -87,5 +90,14 @@
       </footer>
     </div>
     <script src="scripts/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153536015-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-153536015-1');
+    </script>
   </body>
 </html>
