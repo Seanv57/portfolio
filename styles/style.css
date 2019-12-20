@@ -20,6 +20,10 @@ h1, h2, h3, h4, p, .slogan {
   color: #e1e1e1;
 }
 
+.white {
+  color: #ffffff;
+}
+
 h1 {
   font-size: 3.2rem;
   font-family: "montserrat", serif;
@@ -86,9 +90,15 @@ header {
 }
 
 .my-logo {
+  cursor: pointer;
+  display: block;
   float: left;
   margin-left: 8%;
-  display: block;
+  margin-top: 1.5rem;
+}
+
+.my-logo:hover {
+  opacity: .8;
 }
 
 .icon {
@@ -159,11 +169,18 @@ footer ul {
   padding: 3rem;
 }
 
-/* Home page specific */
-.hero {
-margin: 12rem 0 3rem;
+.fa:hover {
+  color: #FE5757;
 }
 
+/* Home page specific */
+.hero {
+  margin: 12rem 0 3rem;
+}
+
+.home-box h1 {
+  margin-bottom: 1rem;
+}
 .mnts-desktop {
   display: none;
 }
@@ -188,18 +205,31 @@ margin: 12rem 0 3rem;
 .project {
   border-radius: 5px;
   margin: 2rem auto;
-  height: 215px;
-  width: 315px;
   text-align: center;
+  width: 35rem;
+  padding: 2rem;
 }
 
 .project p {
-  width: 31.5rem;
+  margin: 1rem 0;
+  width: 100%;
 }
 
 .Sky-Saves {
   background-color: #689F2D;
-  padding-top: 2rem;
+}
+
+.Sky-Saves-case-study-button {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #689F2D;
+  margin: 1rem;
+  padding: 1rem 4rem;
+}
+
+.Sky-Saves-case-study-button:hover {
+  background-color: #37474F;
+  color: #fff;
 }
 
 .Project-2 {
@@ -220,7 +250,7 @@ margin: 12rem 0 3rem;
 /* Sky Saves Case Study specific */
 
 .intro {
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 2.6rem;
   margin: 6rem auto;
 }
@@ -236,6 +266,10 @@ margin: 12rem 0 3rem;
   padding-bottom: 1rem;
 }
 
+.mackbook {
+  height: 22rem;
+}
+
 .Sky-Saves-button {
   background-color: #689F2D;
   border-radius: 5px;
@@ -244,6 +278,11 @@ margin: 12rem 0 3rem;
   margin: 0 auto 6rem;
   text-align: center;
   text-decoration: none;
+}
+
+.Sky-Saves-button:hover {
+  background-color: #37474F;
+  color: #fff;
 }
 
 .bottom-margin {
@@ -331,8 +370,8 @@ margin: 12rem 0 3rem;
 
 .prickly {
  padding-left: 60%;
- padding-top: 3rem;
- margin-bottom: -6.5rem;
+ margin-top: 3rem;
+ margin-bottom: -6.3rem;
 }
 
 /* Contact: */
@@ -344,20 +383,50 @@ margin: 12rem 0 3rem;
 
 .contact-info h1 {
     font-size: 3.2rem;
-    line-height: 5rem;
-    margin-left: 5%;
+    margin-left: 10%;
     width: 0;
 }
 
-.contact-info a {
-  font-family: "source sans pro" sans-serif;
-  color: #e1e1e1;
-  line-height: 3rem;
-  margin-left: 5%;
+form {
+  border: .2rem solid #2587FB;
+  border-radius: 5px;
+  margin: 10%;
+  margin-top: 3rem;
+  padding: 5%;
 }
 
-.contact-info a:hover {
-  color: #FE5757;
+label {
+  color: #e1e1e1;
+  font-family: "source sans pro", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.contact-input {
+  height: 2.6rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.contact-msg {
+  height: 10rem;
+  width: 100%;
+}
+
+.contact-send {
+  background-color: #2587FB;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "source sans pro", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+}
+
+.contact-send:hover {
+  opacity: .8;
 }
 
 .contact-pic {
@@ -398,7 +467,6 @@ margin: 12rem 0 3rem;
     height: 4.8rem;
     line-height: 6rem;
     margin: 0 1rem;
-    padding-right: 1rem;
   }
 
   .tab-only a:hover {
@@ -457,7 +525,7 @@ margin: 12rem 0 3rem;
   }
 
   .prickly {
-    margin-bottom: -12.7rem;
+    margin-bottom: -12.5rem;
   }
 
   .blue-square {
@@ -470,8 +538,21 @@ margin: 12rem 0 3rem;
     z-index: -2;
   }
 
+/* For Contact page: */
+form {
+  padding: 3rem;
+  width: 48rem;
 }
 
+.contact-input {
+  width: 42rem;
+}
+
+.contact-msg {
+  width: 42rem;
+}
+
+}
 /* For desktop: */
 @media only screen and (min-width: 768px) {
   h1, h2, h3, h4, p, .slogan {
@@ -552,7 +633,7 @@ margin: 12rem 0 3rem;
   }
 
   .cactus {
-    margin-bottom: -2.8rem;
+    margin-bottom: -3rem;
     margin-left: 75%;
   }
 
@@ -588,7 +669,12 @@ margin: 12rem 0 3rem;
     margin: 1%;
   }
 
+.contact-nav {
+  border-bottom: .2rem solid #2587FB;
 }
+
+}
+
 /* Sky Saves Desktop */
 @media only screen and (min-width: 900px) {
 
@@ -725,7 +811,7 @@ margin: 12rem 0 3rem;
 
   .prickly {
     grid-column-start: 1;
-    margin-bottom: -.5rem;
+    margin-bottom: -.3rem;
   }
 }
 /* For wide desktop: */

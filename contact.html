@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Sean Valenzuela About Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap">
@@ -15,8 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <header class="about-nav">
-        <img src="images/Logo.png" class="my-logo" alt="Sean's logo">
+      <header class="contact-nav">
+        <a href="index.html">
+          <svg class="my-logo" width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1" fill="white">
+              <rect y="6" width="50" height="20" rx="1"/>
+            </mask>
+            <rect y="6" width="50" height="20" rx="1" stroke="#FE5757" stroke-width="6" mask="url(#path-1-inside-1)"/>
+            <path d="M13.3856 29.48C11.7323 29.48 10.0256 29.1867 8.26563 28.6C6.53229 27.9867 4.95896 27.04 3.54563 25.76L7.46563 21.04C8.39896 21.7867 9.39896 22.4 10.4656 22.88C11.559 23.3333 12.5856 23.56 13.5456 23.56C14.5856 23.56 15.3323 23.4 15.7856 23.08C16.2656 22.76 16.5056 22.3067 16.5056 21.72C16.5056 21.4 16.4256 21.1333 16.2656 20.92C16.1056 20.7067 15.8656 20.5067 15.5456 20.32C15.2523 20.1333 14.8923 19.96 14.4656 19.8C14.039 19.6133 13.5456 19.4133 12.9856 19.2L9.74563 17.84C9.05229 17.5733 8.38563 17.2267 7.74563 16.8C7.10563 16.3467 6.54563 15.8267 6.06563 15.24C5.58563 14.6267 5.19896 13.9333 4.90562 13.16C4.63896 12.3867 4.50563 11.5333 4.50563 10.6C4.50563 9.48 4.74563 8.44 5.22563 7.48C5.70563 6.49333 6.37229 5.64 7.22563 4.92C8.07896 4.17333 9.09229 3.58666 10.2656 3.16C11.4656 2.73333 12.7723 2.52 14.1856 2.52C15.679 2.52 17.1856 2.8 18.7056 3.36C20.2523 3.92 21.6256 4.8 22.8256 6L19.3856 10.32C18.5056 9.70667 17.6523 9.24 16.8256 8.92C16.0256 8.6 15.1456 8.44 14.1856 8.44C13.3323 8.44 12.6656 8.58667 12.1856 8.88C11.7056 9.17333 11.4656 9.61333 11.4656 10.2C11.4656 10.8133 11.799 11.2933 12.4656 11.64C13.159 11.96 14.1056 12.3467 15.3056 12.8L18.4656 14.04C20.0923 14.68 21.3456 15.5733 22.2256 16.72C23.1056 17.8667 23.5456 19.3467 23.5456 21.16C23.5456 22.2533 23.319 23.3067 22.8656 24.32C22.4123 25.3333 21.7456 26.2267 20.8656 27C20.0123 27.7467 18.959 28.3467 17.7056 28.8C16.4523 29.2533 15.0123 29.48 13.3856 29.48ZM32.1238 29L24.4437 3H31.7238L34.4438 14.36C34.8171 15.7467 35.1371 17.12 35.4037 18.48C35.6704 19.8133 35.9904 21.1867 36.3638 22.6H36.5238C36.8971 21.1867 37.2171 19.8133 37.4838 18.48C37.7771 17.12 38.0971 15.7467 38.4438 14.36L41.0838 3H48.1238L40.4438 29H32.1238Z" fill="#E1E1E1"/>
+          </svg>
+        </a>
         <ul class="tab-only">
           <li><a href="index.html">Home</a></li>
           <li><a href="project.html">Work</a></li>
@@ -35,22 +43,50 @@
       </header>
       <main class="contact-info">
         <h1 class="light">Contact</h1>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/sean-valenzuela-b5a9a9a0/">Linkdin</a>
-          </li>
-          <li>
-            <a href="https://github.com/Seanv57">Github</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/seanv57/">Instagram</a>
-          </li>
-          <li>
-            <a href="mailto:seanv57@gmail.com">Seanv57@gmail.com</a>
-          </li>
-        </ul>
+        <form
+          action="https://formspree.io/xnqjjpop"
+          method="POST"
+          >
+          <label>Your Name:</label>
+          <br>
+          <input class="contact-input" type="text" name="name">
+          <br>
+          <label>Your Email:</label>
+          <br>
+          <input class="contact-input" type="email" name="_replyto">
+          <br>
+          <label>Message:</label>
+          <br>
+          <textarea class="contact-msg" name="message"></textarea>
+          <br>
+          <input class="contact-send" type="submit" value="Send">
+        </form>
         <img src="images/Seven Falls Hike.jpg" class="contact-pic" alt="Seven Falls Hike">
       </main>
+      <footer>
+        <ul class="footmedia">
+          <li>
+            <a href="https://www.linkedin.com/in/sean-valenzuela-b5a9a9a0/" class="light" target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Seanv57" class="light" target="_blank">
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/seanv57/" class="light" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:seanv57@gmail.com" class="light" target="_blank">
+              <i class="fa fa-envelope-square" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
     <script src="scripts/main.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
