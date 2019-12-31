@@ -381,6 +381,10 @@ footer ul {
   color: #fff;
 }
 
+.user-flow {
+  width: 35rem;
+}
+
 .Sky-Saves-old-sketches {
   overflow: auto;
   height: 55rem;
@@ -728,6 +732,10 @@ label {
     width: 80%;
   }
 
+  .user-flow {
+    width: 50.9rem;
+  }
+
   .mockup-img {
     width: 15rem;
   }
@@ -1063,5 +1071,4 @@ label {
   nav {
     width: 144rem;
   }
-
 }
