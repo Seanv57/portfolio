@@ -46,11 +46,15 @@ h3 {
 }
 
 h4 {
+  font-size: 2rem;
+  font-family: "montserrat", serif;
+  font-weight: lighter;
+}
+
+h5 {
   font-size: 1.8rem;
   font-family: "montserrat", serif;
   font-weight: lighter;
-  margin-top: -.25rem;
-  text-align: center;
 }
 
 p, a {
@@ -178,6 +182,12 @@ footer ul {
   margin: 12rem 0 3rem;
 }
 
+.my-title {
+  margin: 0 auto;
+  text-align: center;
+  width:30rem;
+}
+
 .home-box h1 {
   margin-bottom: 1rem;
 }
@@ -261,6 +271,26 @@ footer ul {
   padding-bottom: 6rem;
 }
 
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #37474F;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+}
+
+#backToTop:hover {
+  background-color: #49585A;
+}
+
 .Sky-Saves-Logo {
   background-color: #689F2D;
   padding-bottom: 1rem;
@@ -283,6 +313,120 @@ footer ul {
 .Sky-Saves-button:hover {
   background-color: #37474F;
   color: #fff;
+}
+
+.Sky-Saves-survey li {
+  text-indent: 2rem;
+}
+
+.Sky-Saves-persona {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 100%;
+  padding: 6rem 1rem;
+}
+
+.persona-pic {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.persona-info {
+  float:left;
+  width: 100%;
+  text-align: center;
+}
+
+.personas h4 {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.personas h5{
+  color: #4A4B4F;
+  line-height: 1.3;
+  margin: 1rem auto;
+  width: 33rem;
+}
+
+.persona-content p {
+  margin-bottom: 3rem;
+}
+
+.personas li {
+  text-indent: 2rem;
+}
+
+.Sky-Saves-user-stories {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Sky-Saves-user-stories td, .Sky-Saves-user-stories th {
+  border: .1rem solid #ddd;
+  padding: .8rem;
+}
+
+.Sky-Saves-user-stories tr:nth-child(even){background-color: #f2f2f2;}
+
+.Sky-Saves-user-stories tr:hover {background-color: #ddd;}
+
+.Sky-Saves-user-stories th {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: left;
+  background-color: #689F2D;
+  color: #fff;
+}
+
+.Sky-Saves-old-sketches {
+  overflow: auto;
+  height: 55rem;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.Sky-Saves-new-sketches {
+  overflow: auto;
+  height: 105rem;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.Sky-Saves-wireframe-mockups {
+  overflow: auto;
+  height: 70rem;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.sketch {
+  border: .1rem solid #000;
+  display: inline-block;
+  padding: 1rem;
+  text-align: center;
+}
+
+.branding h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.style-guide {
+  padding: 3rem;
+  text-align: center;
+}
+
+.style-guide-img {
+  margin: 1rem;
+  width: 15rem;
+}
+
+.mockup-img {
+  margin: 1rem;
+  width: 10rem;
 }
 
 .bottom-margin {
@@ -437,10 +581,6 @@ label {
 /* For Tablets: */
 @media only screen and (min-width: 600px) {
 
-  .right {
-    margin-right: 15.3rem;
-  }
-
   .home-intro {
     width: 40rem;
   }
@@ -538,20 +678,59 @@ label {
     z-index: -2;
   }
 
-/* For Contact page: */
-form {
-  padding: 3rem;
-  width: 48rem;
-}
+  /* For Contact page: */
+  form {
+    padding: 3rem;
+    width: 48rem;
+  }
 
-.contact-input {
-  width: 42rem;
-}
+  .contact-input {
+    width: 42rem;
+  }
 
-.contact-msg {
-  width: 42rem;
-}
+  .contact-msg {
+    width: 42rem;
+  }
 
+  /* For Sky Saves Page */
+  .personas {
+    margin: auto;
+    width: 80%;
+  }
+
+  .persona-pic {
+    float: left;
+    width: 30%;
+  }
+
+  .persona-info {
+    float:left;
+    height: 10rem;
+    margin-top: 7.5rem;
+    margin-bottom: 8rem;
+    padding-left: 4rem;
+    width: 70%;
+  }
+
+  .persona-content {
+    margin-top: 3rem;
+  }
+
+  .personas h4 {
+    width: 18rem;
+  }
+
+  .personas h5 {
+    text-align: left;
+  }
+
+  .Sky-Saves-user-stories {
+    width: 80%;
+  }
+
+  .mockup-img {
+    width: 15rem;
+  }
 }
 /* For desktop: */
 @media only screen and (min-width: 768px) {
@@ -560,15 +739,16 @@ form {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .home-box h1 {
     width: 50rem;
   }
 
-  h4 {
+  .my-title {
     font-size: 2.4rem;
+    width: 50rem;
   }
 
   .sun {
@@ -605,8 +785,7 @@ form {
   }
 
   .home-intro {
-    font-size: 2rem;
-    padding-top: 10%;
+    padding-top: 5%;
     width: 45rem;
   }
 
@@ -678,9 +857,54 @@ form {
 /* Sky Saves Desktop */
 @media only screen and (min-width: 900px) {
 
+  h1 {
+    font-size: 5rem;
+  }
+
+  .home-intro {
+    font-size: 2rem;
+    letter-spacing: 30%;
+    margin-top: 10%;
+    width: 50rem;
+  }
+
   .Sky-Saves-content {
     margin: 0 auto;
     width: 90rem;
+  }
+
+  .persona-pic {
+    margin-left: 6rem;
+    width: 15.9rem;
+  }
+
+  .persona-info {
+    margin-left: 3rem;
+    width: 40rem;
+  }
+
+  .persona-content p {
+    width: 56rem;
+  }
+
+  .personas h5 {
+    width: 56rem;
+  }
+
+  .personas ul {
+    margin-left: 7rem;
+  }
+
+  .Sky-Saves-user-stories {
+    width: 100%;
+  }
+
+  .Sky-Saves-survey-pic {
+    height: 69.1rem;
+  }
+
+  .mockup-img {
+    width: 20rem;
   }
 
   .bottom-margin-small {
@@ -747,11 +971,18 @@ form {
     width: 30rem;
   }
 
-  .style-guide {
+  .style-guide-section {
     grid-column-start: 2;
-    margin-top: -23rem;
+    margin-top: -65rem;
   }
 
+  .style-guide {
+    padding: 0;
+  }
+
+  .style-guide-img {
+    width: 20rem;
+  }
 }
 /* For About desktop: */
 @media only screen and (min-width: 1025px) {
@@ -823,6 +1054,10 @@ form {
 
   .Sky-Saves-content {
     width: 90rem;
+  }
+
+  .mockup-img {
+    width: 26rem;
   }
 
   nav {

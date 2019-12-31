@@ -40,6 +40,7 @@
       </nav>
     </header>
     <main class="Sky-Saves-Case-Study">
+      <button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
       <div class="center Sky-Saves-Logo">
         <svg width="180" height="129" viewBox="0 0 180 129" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d)">
@@ -78,7 +79,7 @@
           </div>
         </section>
           <div class="center">
-            <a href="https://invis.io/F2UBUD4X3R5" class="Sky-Saves-button" title="Prototype">Prototype</a>
+            <a href="https://invis.io/F2UBUD4X3R5" class="Sky-Saves-button" title="Prototype">View Prototype</a>
           </div>
         <section class="three-column">
           <div>
@@ -124,12 +125,13 @@
           <div class="center bottom-margin mobile-only">
             <img src="images/Survey.jpg" alt="Survey screenshot">
           </div>
-          <div class="desktop-only">
+          <div class="desktop-only Sky-Saves-survey-pic">
             <img src="images/survey pics.jpg" alt="Survey screenshots">
           </div>
-          <div>
+          <div class="Sky-Saves-survey">
             <h3>User Survey</h3>
-            <p class="bottom-margin-small">I conducted a user survey to learn more about potential users.</p>
+            <p class="bottom-margin-small">I conducted a user survey to learn more about potential users. My primary goal for this survey was to determine what features users want most. I also wanted to learn which services people currently use and what they like/dislike about the competition’s product.</p>
+            <p class="bottom-margin-small">From this survey, I learned who the major competitors are, the most important features to include, and what device I should build this service for. Here are a few key questions and answers:</p>
             <p>Which cloud storage service do you prefer?</p>
             <ul class="leftli">
               <li>Google Drive 71.4%</li>
@@ -167,73 +169,255 @@
           </div>
           <h3  class="sky-align">User Personas</h3>
           <p class="bottom-margin wide">Now that I had a feel for the competition and important features, I created user personas to represent the target market. The main users I discovered during the market research phase were students and professionals.</p>
+        <section class="personas">
+          <div class="Sky-Saves-persona bottom-margin">
+            <div class="persona-pic">
+              <h4>Samantha</h4>
+              <img src="images/Samantha.jpg" alt="Woman wearing backpack holding notebooks">
+            </div>
+            <div class="persona-info">
+              <h5>Role: College Student</h5>
+              <h5>Age: 23</h5>
+              <h5>Location: Phoenix, AZ</h5>
+            </div>
+            <div class="persona-content">
+              <h5>Bio</h5>
+              <p>Samantha is a busy college student who is always working on group projects. She uses her laptop for school projects and everything else. Samantha balances her work and school schedule daily.</p>
+              <h5>Motivations</h5>
+              <p>Samantha currently uses Google Drive for her online storage needs. She mostly uses it for school but also keeps some personal files on there as well. She uses the cloud to store projects and stay organized.</p>
+              <h5>Goals</h5>
+              <ul class="leftli">
+                <li>Save files and access anywhere</li>
+                <li>Collaborate with classmates on projects</li>
+                <li class="bottom-margin-small">Easy to use</li>
+              </ul>
+              <h5>Frustrations</h5>
+              <ul class="leftli">
+                <li>Lack of notifications</li>
+                <li>Wants more free storage space</li>
+                <li class="bottom-margin-small">Could be more user friendly</li>
+              </ul>
+            </div>
+          </div>
+          <div class="Sky-Saves-persona bottom-margin">
+            <div class="persona-pic">
+              <h4>Jeremy</h4>
+              <img src="images/Jeremy.jpg" alt="Man with beard and shoulder bag">
+            </div>
+            <div class="persona-info">
+              <h5>Role: Young Professional</h5>
+              <h5>Age: 33</h5>
+              <h5>Location: Atlanta, GA</h5>
+            </div>
+            <div class="persona-content">
+              <h5>Bio</h5>
+              <p>Jeremy works a lot. He spends his weekdays working on various projects with his colleagues. He usually juggles important tasks and multiple projects at once. His success depends on collaboration.</p>
+              <h5>Motivations</h5>
+              <p>Jeremy needs a product that can help him differentiate saved projects.. He uses cloud storage services for the convenience but is concerned with security.</p>
+              <h5>Goals</h5>
+              <ul class="leftli">
+                <li>Collaborate with colleagues</li>
+                <li>Security and privacy of files</li>
+                <li class="bottom-margin-small">Organizing different projects</li>
+              </ul>
+              <h5>Frustrations</h5>
+              <ul class="leftli">
+                <li>Lack of project description</li>
+                <li>Layout could be better</li>
+                <li class="bottom-margin-small">Less complicated</li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <section class="two-column">
-          <div>
-            <h3>Persona 1</h3>
-            <div class="center">
-              <img src="images/Samantha.jpg" alt="1st persona">
-            </div>
-          </div>
-          <div>
-            <h3>Persona 2</h3>
-            <div class="center">
-              <img src="images/Jeromy.jpg" alt="2nd persona">
-            </div>
-          </div>
           <div>
             <h3>User stories</h3>
             <p class="bottom-margin">Using all the previous research, I compiled a list of the most important tasks that users should be able to accomplish with this service. This was an important step to help avoid scope creep.</p>
           </div>
           <div class="center bottom-margin">
-            <img src="images/User tasks.jpg" alt="User Tasks">
+            <table class="Sky-Saves-user-stories">
+              <tr>
+                <th>Role</th>
+                <th>Task</th>
+                <th>Importance</th>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to upload a file</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to download a file</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to organize files into folders or categories</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to view my files</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to search for files</td>
+                <td>High</td>
+              </tr>
+            </table>
           </div>
         </section>
         <h3 class="sky-align">User Flows</h3>
         <p class="bottom-margin-small wide">Using tasks from the user stories, I created user flows to show all the actions necessary for users to be able to complete the user tasks.</p>
+        <h4 class="bottom-margin-small">Uploading a file, User flow</h4>
         <div class="center bottom-margin-small">
-          <img src="images/User flow.png" alt="User Flows">
+          <img src="images/User flow.png" class="bottom-margin-small" alt="User Flows">
         </div>
         <div class="center">
-          <a href="https://drive.google.com/open?id=1kzduBbTbvodEn3x1DkqFrRSlj5SvrvTW" class="Sky-Saves-button" title="User flows">User Flows</a>
+          <a href="https://drive.google.com/open?id=1kzduBbTbvodEn3x1DkqFrRSlj5SvrvTW" class="Sky-Saves-button" title="User flows"> View User Flows</a>
         </div>
         <section class="Sky-Saves-Information-Architecture">
           <h2 class="bottom-margin wide">Information Architecture</h2>
           <h3 class="sky-align">Wireframes</h3>
-          <p class="wide">With the user research done, it was time to take out the notebook and start sketching. I wanted to create something simple and easy to use with the focus on user content. I made a few iterations of wireframe sketches and wireframe mockups.</p>
-          <br>
+          <p class="wide">With the user research done, it was time to take out the notebook and start sketching. I wanted to create something simple and easy to use with the focus on user content. Before testing, I made a few iterations of wireframe sketches and wireframe mockups.</p>
+          <h3 class="center">1st Iteration Wireframes</h3>
+          <div class="bottom-margin Sky-Saves-old-sketches">
+            <div class="sketch">
+              <img src="images/old sketches/Home.jpg" alt="1st iteration wireframes">
+              <p>Home/ landing page</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/User Dashboard.jpg" alt="1st iteration wireframes">
+              <p>User dashboard</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/New folder.jpg" alt="1st iteration wireframes">
+              <p>Creating a folder</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/Folder navigation.jpg" alt="1st iteration wireframes">
+              <p>Folder navigation</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/Options.jpg" alt="1st iteration wireframes">
+              <p>Options tab</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/Sharing.jpg" alt="1st iteration wireframes">
+              <p>Sharing a file or folder</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/Upload.jpg" alt="1st iteration wireframes">
+              <p>Upload options</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/Upload tab.jpg" alt="1st iteration wireframes">
+              <p>Upload file/ folder selection</p>
+            </div>
+            <div class="sketch">
+              <img src="images/old sketches/Search.jpg" alt="1st iteration wireframes">
+              <p>Search</p>
+            </div>
+          </div>
+          <h3 class="center">Final Iteration Wireframes</h3>
+          <div class="bottom-margin sketches Sky-Saves-new-sketches">
+            <div class="sketch">
+              <img src="images/new sketches/Home.jpg" alt="Final iteration wireframes">
+              <p>Home/ landing page</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/User Dashboard.jpg" alt="Final iteration wireframes">
+              <p>User dashboard</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/New folder.jpg" alt="Final iteration wireframes">
+              <p>Creating a folder</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/Folder navigation.jpg" alt="Final iteration wireframes">
+              <p>Folder navigation</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/Options.jpg" alt="Final iteration wireframes">
+              <p>Options tab</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/Sharing.jpg" alt="Final iteration wireframes">
+              <p>Sharing a file or folder</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/Upload.jpg" alt="Final iteration wireframes">
+              <p>Upload options</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/Upload tab.jpg" alt="Final iteration wireframes">
+              <p>Upload file/ folder selection</p>
+            </div>
+            <div class="sketch">
+              <img src="images/new sketches/Search.jpg" alt="Final iteration wireframes">
+              <p>Search</p>
+            </div>
+          </div>
+          <h3 class="center">Wireframe Mockups</h3>
+          <div class="bottom-margin sketches Sky-Saves-wireframe-mockups">
+            <div class="sketch">
+              <img src="images/wireframe mockups/Home.jpg" alt="Digital wireframes">
+              <p>Home/ landing page</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/User Dashboard.jpg" alt="Digital wireframes">
+              <p>User dashboard</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/New folder.jpg" alt="Digital wireframes">
+              <p>Creating a folder</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/Folder navigation.jpg" alt="Digital wireframes">
+              <p>Folder navigation</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/Options.jpg" alt="Digital wireframes">
+              <p>Options tab</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/Sharing.jpg" alt="Digital wireframes">
+              <p>Sharing a file or folder</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/Upload.jpg" alt="Digital wireframes">
+              <p>Upload options</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/Upload options.jpg" alt="Digital wireframes">
+              <p>Upload file/ folder selection</p>
+            </div>
+            <div class="sketch">
+              <img src="images/wireframe mockups/Search.jpg" alt="Digital wireframes">
+              <p>Search</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3 class="sky-align">Usability Testing</h3>
           <p class="wide">Using the wireframe mockups, I created a clickable prototype on InVision. I conducted user tests via video chat and in person. I had the users show me how they would sign up for an account, add content to the account, and organize their content.</p>
           <br>
           <p class="wide bottom-margin">From the usability tests, I learned that I should include a drag and drop feature for moving content around and to make sure icons are recognizable. With the testing in mind, I made some alterations to the layout before moving on.</p>
-          <h3 class="center">1st Iteration Wireframes</h3>
-          <div class="center bottom-margin mobile-only">
-            <img src="images/Old sketches.jpg" alt="1st iteration wireframes">
-          </div>
-          <div class="bottom-margin desktop-only">
-            <img src="images/Old sketches wide.jpg" alt="1st iteration wireframes">
-          </div>
-          <h3 class="center">Final Iteration Wireframes</h3>
-          <div class="center bottom-margin mobile-only">
-            <img src="images/New sketches.jpg" alt="FInal iteration wireframes">
-          </div>
-          <div class="bottom-margin desktop-only">
-            <img src="images/New sketches wide.jpg" alt="FInal iteration wireframes">
-          </div>
-          <h3 class="center">Wireframe Mockups</h3>
-          <div class="center bottom-margin mobile-only">
-            <img src="images/Wireframe mockups.jpg" alt="Wireframe Mockups">
-          </div>
-          <div class="bottom-margin desktop-only">
-            <img src="images/Wireframe mockups wide.jpg" alt="Wireframe Mockups">
-          </div>
         </section>
           <h2 class="bottom-margin">Branding</h2>
         <section class="two-column">
-          <div>
+          <div class="branding">
             <h3>Building the Brand</h3>
             <p>In order to add style to this project I needed to create the brand. First, I researched how the competition brands their products and began brainstorming. Many cloud storage brands use blue as a primary color and clouds in some way. I decided to skip the blue but keep the clouds.</p>
-            <br>
+            <h4>Logo</h4>
             <p>I created many variations of the logo and a list of ideas for a name. I eventually came up with the name Sky Saves and chose a cloud behind three trees as the logo. The trees are meant to be upload arrows and represent the companies environmentally friendly stance.</p>
-            <br>
+            <h4>Colors</h4>
+            <p>I chose green as the primary color because I wanted the brand to stick out as eco-friendly. The other colors are mostly grays, whites, and black as accent colors.</p>
+            <h4>Typography</h4>
+            <p>The two fonts that I used were Josefin Sans and Lato. I used Josefin Sans to add some character to headers and titles. I paired Lato with Josefin Sans becuase it's also a modern style font and easier to read for all other text.</p>
+            <h4>Moodboard</h4>
             <p class="bottom-margin">I put some of these ideas onto a moodboard for inspiration. Using this moodboard as a guideline, I started focusing on details such as fonts and colors. I took these decisions and created a style guide for the website.</p>
           </div>
           <div>
@@ -242,10 +426,21 @@
               <img src="images/Moodboard.jpg" alt="Moodboard">
             </div>
           </div>
-          <div class="style-guide">
+          <div class="style-guide-section">
             <h3 class="brand-align">Style Guide</h3>
-            <div class="center bottom-margin">
-              <img src="images/Style Guide.jpg" alt="Style Guide">
+            <div class="style-guide bottom-margin">
+              <a href="images/Icons and Logo.jpg">
+                <img src="images/Icons and Logo.jpg" class="style-guide-img" alt="Sky Saves icons and logo">
+              </a>
+              <a href="images/Colors.jpg">
+                <img src="images/Colors.jpg" class="style-guide-img" alt="Sky Saves icons and logo">
+              </a>
+              <a href="images/Typography.jpg">
+                <img src="images/Typography.jpg" class="style-guide-img" alt="Sky Saves icons and logo">
+              </a>
+              <a href="images/Spacing.jpg">
+                <img src="images/Spacing.jpg" class="style-guide-img" alt="Sky Saves icons and logo">
+              </a>
             </div>
           </div>
         </section>
@@ -254,32 +449,34 @@
           <h3 class="sky-align">Mockups</h3>
           <p class="bottom-margin wide">The next step was exciting because I got to take everything from the previous steps and put it all together. My goal was to make a very minimal website. Once I had my first iteration of mockups, I conducted user preference tests. After the tests, I made some alterations and went through a few iterations until I was satisfied.</p>
           <h3 class="bottom-margin-small center">Mockup iterations</h3>
-          <h3 class="center">User Dashboards</h3>
-          <div class="center bottom-margin-small mobile-only">
-            <img src="images/Dashboard 1.jpg" alt="1st user dashboard">
-            <img src="images/Dashboard 2.jpg" alt="2nd user dashboard">
-            <img src="images/Dashboard 3.jpg" alt="3rd user dashboard">
+          <h4 class="center">User Dashboards</h4>
+          <div class="center bottom-margin-small">
+            <a href="images/Dashboard 1.jpg">
+              <img src="images/Dashboard 1.jpg" class="mockup-img" alt="1st user dashboard">
+            </a>
+            <a href="images/Dashboard 2.jpg">
+              <img src="images/Dashboard 2.jpg" class="mockup-img" alt="2nd user dashboard">
+            </a>
+            <a href="images/Dashboard 3.jpg">
+              <img src="images/Dashboard 3.jpg" class="mockup-img" alt="3rd user dashboard">
+            </a>
           </div>
-          <div class="center bottom-margin-small desktop-only">
-            <img src="images/large Dashboard 1.jpg" alt="1st user dashboard">
-            <img src="images/large Dashboard 2.jpg" alt="2nd user dashboard">
-            <img src="images/large Dashboard 3.jpg" alt="3rd user dashboard">
-          </div>
-          <h3 class="center">Home pages</h3>
-          <div class="center bottom-margin mobile-only">
-            <img src="images/Home 1.jpg" alt="1st home page">
-            <img src="images/Home 2.jpg" alt="2nd home page">
-            <img src="images/Home 3.jpg" alt="3rd home page">
-          </div>
-          <div class="center bottom-margin desktop-only">
-            <img src="images/large Home 1.jpg" alt="1st home page">
-            <img src="images/large Home 2.jpg" alt="2nd home page">
-            <img src="images/large Home 3.jpg" alt="3rd home page">
+          <h4 class="center">Home pages</h4>
+          <div class="center bottom-margin">
+            <a href="images/Home 1.jpg">
+              <img src="images/Home 1.jpg" class="mockup-img" alt="1st home page">
+            </a>
+            <a href="images/Home 2.jpg">
+              <img src="images/Home 2.jpg" class="mockup-img" alt="2nd home page">
+            </a>
+            <a href="images/Home 3.jpg">
+              <img src="images/Home 3.jpg" class="mockup-img" alt="3rd home page">
+            </a>
           </div>
           <h3 class="sky-align">Prototype</h3>
           <p class="center bottom-margin wide">After building the mockups, I created a clickable prototype of the website. I conducted a few more usability tests to see how people interacted with the website and if they could complete some basic tasks. The results were very positive. From this round of testing I learned I should add a signup button to the bottom of the home page and to make sure the uploading bar is visible.</p>
           <div class="center">
-            <a href="https://invis.io/F2UBUD4X3R5" class="Sky-Saves-button" title="Prototype">Prototype</a>
+            <a href="https://invis.io/F2UBUD4X3R5" class="Sky-Saves-button" title="Prototype">View Prototype</a>
           </div>
         </section>
         <section class="Sky-Saves-Conclusion">
