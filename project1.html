@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sky Saves Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/sky/favicon.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <header class="skynav">
+      <a href="index.html">
+        <svg class="my-logo" width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="path-1-inside-1" fill="white">
+            <rect y="6" width="50" height="20" rx="1"/>
+          </mask>
+          <rect y="6" width="50" height="20" rx="1" stroke="#FE5757" stroke-width="6" mask="url(#path-1-inside-1)"/>
+          <path d="M13.3856 29.48C11.7323 29.48 10.0256 29.1867 8.26563 28.6C6.53229 27.9867 4.95896 27.04 3.54563 25.76L7.46563 21.04C8.39896 21.7867 9.39896 22.4 10.4656 22.88C11.559 23.3333 12.5856 23.56 13.5456 23.56C14.5856 23.56 15.3323 23.4 15.7856 23.08C16.2656 22.76 16.5056 22.3067 16.5056 21.72C16.5056 21.4 16.4256 21.1333 16.2656 20.92C16.1056 20.7067 15.8656 20.5067 15.5456 20.32C15.2523 20.1333 14.8923 19.96 14.4656 19.8C14.039 19.6133 13.5456 19.4133 12.9856 19.2L9.74563 17.84C9.05229 17.5733 8.38563 17.2267 7.74563 16.8C7.10563 16.3467 6.54563 15.8267 6.06563 15.24C5.58563 14.6267 5.19896 13.9333 4.90562 13.16C4.63896 12.3867 4.50563 11.5333 4.50563 10.6C4.50563 9.48 4.74563 8.44 5.22563 7.48C5.70563 6.49333 6.37229 5.64 7.22563 4.92C8.07896 4.17333 9.09229 3.58666 10.2656 3.16C11.4656 2.73333 12.7723 2.52 14.1856 2.52C15.679 2.52 17.1856 2.8 18.7056 3.36C20.2523 3.92 21.6256 4.8 22.8256 6L19.3856 10.32C18.5056 9.70667 17.6523 9.24 16.8256 8.92C16.0256 8.6 15.1456 8.44 14.1856 8.44C13.3323 8.44 12.6656 8.58667 12.1856 8.88C11.7056 9.17333 11.4656 9.61333 11.4656 10.2C11.4656 10.8133 11.799 11.2933 12.4656 11.64C13.159 11.96 14.1056 12.3467 15.3056 12.8L18.4656 14.04C20.0923 14.68 21.3456 15.5733 22.2256 16.72C23.1056 17.8667 23.5456 19.3467 23.5456 21.16C23.5456 22.2533 23.319 23.3067 22.8656 24.32C22.4123 25.3333 21.7456 26.2267 20.8656 27C20.0123 27.7467 18.959 28.3467 17.7056 28.8C16.4523 29.2533 15.0123 29.48 13.3856 29.48ZM32.1238 29L24.4437 3H31.7238L34.4438 14.36C34.8171 15.7467 35.1371 17.12 35.4037 18.48C35.6704 19.8133 35.9904 21.1867 36.3638 22.6H36.5238C36.8971 21.1867 37.2171 19.8133 37.4838 18.48C37.7771 17.12 38.0971 15.7467 38.4438 14.36L41.0838 3H48.1238L40.4438 29H32.1238Z" fill="#E1E1E1"/>
+        </svg>
+      </a>
+      <ul class="tab-only">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#Case-studies">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <nav>
+        <div class="icon" onclick="toggleCls()">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Case-studies">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="projects">
+      <button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
+      <div class="center Decantr-logo">
+        <img src="images/Decantr/Decantr.png" alt="Decantr logo">
+      </div>
+      <div class="project-content">
+        <p class="intro wide">Decantr is an app for keeping a list of wines you’ve tried, rating, and sharing them. Good wine should be shared.</p>
+        <div class="Decantr-iphonex bottom-margin">
+          <img src="images/Decantr/Welcome.jpg" class="Decantr-mockup" alt="Decantr welcome screen">
+          <img src="images/Decantr/Wine list.jpg" class="Decantr-mockup" alt="Decantr welcome screen">
+          <img src="images/Decantr/Wine added.jpg" class="Decantr-mockup" alt="Decantr welcome screen">
+          <img src="images/Decantr/Activity.jpg" class="Decantr-mockup" alt="Decantr welcome screen">
+        </div>
+        <section class="two-column">
+          <div class="left-align">
+            <h3>Problem</h3>
+            <p class="center bottom-margin">Wine is something we drink to celebrate, to enjoy with friends, to relax and unwind with, and for many other occasions. With all the different grape varieties, blends, and brands, it can be difficult to decide which wine to choose and which wines you’ve tried. We spend so much time trying to figure out what wines to try but who wants to stand on the wine aisle scanning each bottle looking for the best one?</p>
+          </div>
+          <div class="left-align">
+            <h3>Solution</h3>
+            <p class="center bottom-margin">Decantr is a wine app that allows you to save a list of wines you’ve tried and sort them to see your favorites. You can recommend wines to your friends and see what wines they recommend. What better way to choose a wine than to get a recommendation from a friend! You can also easily find wine venues and vineyards nearby.</p>
+          </div>
+        </section>
+          <div class="center">
+            <a href="https://sean357236.invisionapp.com/public/share/PCX1E77ZA" class="Decantr-button bottom-margin" title="Prototype">View Prototype</a>
+          </div>
+        <section class="three-column">
+          <div>
+            <h3 class="center">Project Roles</h3>
+            <ul class="centerli">
+              <li>Brand creator</li>
+              <li>UX designer</li>
+              <li class="bottom-margin-small">Visual designer</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="center">Deliverables</h3>
+            <ul class="centerli">
+              <li>User surveys</li>
+              <li>User personas</li>
+              <li>User stories</li>
+              <li>User flows</li>
+              <li>Content strategy</li>
+              <li>Wireframes</li>
+              <li>Branding</li>
+              <li>High fidelity mockups</li>
+              <li class="bottom-margin-small">Prototype and testing</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="center">Tools</h3>
+            <ul class="centerli">
+              <li>Figma</li>
+              <li>InVision</li>
+              <li>Google Forms</li>
+              <li class="bottom-margin">Draw.io Diagrams</li>
+            </ul>
+          </div>
+        </section>
+        <h1 class="bottom-margin-small top-margin-small">The Process</h1>
+        <hr class="process-line">
+        <h2 class="bottom-margin top-margin-small">User Research</h2>
+        <section>
+          <div class="project-survey">
+            <h3 class="sky-align">User Survey</h3>
+            <p class="bottom-margin-small wide">I created a user survey and shared it with potential users to try to get a feel for what features might be important to people. This is what I learned from the user survey:</p>
+            <p class="bottom-margin-small wide">People tend to drink wine at home. They mostly do not write down wines they’ve drank. The results were split evenly for buying new wines and buying favorite wines. People would be interested in seeing what wines their friends are drinking and would consider downloading a wine app even though most people do not already have a wine app. People age 31-40 were the highest demographic that replied to this survey.</p>
+            <p class="wide">The top five most important features of a wine app per survey:</p>
+            <ul class="leftli wide">
+              <li>Keep a list of wines you’ve tried</li>
+              <li>Search wines</li>
+              <li>Ability to rate wines</li>
+              <li>Have friends in app</li>
+              <li class="bottom-margin-small">Ability to recommend wines to friends</li>
+            </ul>
+          </div>
+          <div class="center bottom-margin">
+            <img src="images/Decantr/Survey.png" class="survey-pic" alt="Photo of survey">
+          </div>
+        </section>
+          <h3 class="sky-align">Competitive analysis</h3>
+          <p class="bottom-margin wide">The existing wine apps that I reviewed are Vivino, Delectable, and Untappd. I’m including Untappd in this because they have a very similar feel, besides being for beer. Vivino seems to be the better of the two wine rating apps with their easy to use app and great features. Untappd is a great social beer rating app that has features that should be included in a social wine app. I don’t like Delectable’s rating system, it starts at 5 and goes to 10. After reviewing these companies and doing a few general category searches I think the sweet spot for a new wine app is to take some features from all three apps and add more social features.</p>
+          <div class="center bottom-margin">
+            <img src="images/Decantr/Wine apps.png" alt="Competition logos">
+          </div>
+          <h3 class="sky-align">User Interviews</h3>
+          <p class="bottom-margin wide">After reviewing the results from the survey and competitive analysis, I interviewed a few survey participants to get a more in depth idea of the target market. I used these interviews as a way to learn more about what motivates users regarding wine drinking and apps. I also asked questions about goals, frustrations, and short bios.</p>
+          <h3  class="sky-align">User Personas</h3>
+          <p class="bottom-margin wide">I took what I learned from the user surveys, user interviews, and competitive analysis and I created three user personas to represent the target market. These personas should help to keep the target market in mind when deciding on features and creating the brand.</p>
+        <section class="center bottom-margin">
+          <a href="images/Decantr/Jessica.jpg">
+            <img src="images/Decantr/Jessica.jpg" class="Decantr-photos" alt="Decantr persona one">
+          </a>
+          <a href="images/Decantr/Michael.jpg">
+            <img src="images/Decantr/Michael.jpg" class="Decantr-photos" alt="Decantr persona two">
+          </a>
+          <a href="images/Decantr/Christopher.jpg">
+            <img src="images/Decantr/Christopher.jpg" class="Decantr-photos" alt="Decantr persona three">
+          </a>
+        </section>
+        <section class="two-column">
+          <div>
+            <h3>User stories</h3>
+            <p class="bottom-margin">Now that I had a better idea of who the target market is I created a list of the most important features that the app should include. This list will help prioritize user tasks when making the MVP. It strongly mirrors the the most important features found during the research phase of the project.</p>
+          </div>
+          <div class="center bottom-margin">
+            <table class="user-story-chart Decantr-chart-color">
+              <tr>
+                <th>Role</th>
+                <th>Task</th>
+                <th>Importance</th>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to view and edit my list of wines</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to search all wines</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to rate wines</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to interact with friends</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user</td>
+                <td>I would like to recommend wines to friends</td>
+                <td>High</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <h3 class="sky-align">User Flows</h3>
+        <p class="bottom-margin-small wide">I took some of the most important tasks found in the user stories and created a few user flows. I made these so I could visualize what steps will be needed to create the wireframes.</p>
+        <h4 class="bottom-margin-small">Rating wine user flow</h4>
+        <div class="center bottom-margin">
+          <img src="images/Decantr/User flow.png" class="user-flow" alt="User Flows">
+        </div>
+        <div class="center">
+          <a href="https://drive.google.com/open?id=1Da-V6CBZdPwdfaToFMXDFcIc2FYjRRJ4" class="Decantr-button bottom-margin" title="User flows"> View User Flows</a>
+        </div>
+        <section>
+          <h2 class="bottom-margin wide">Information Architecture</h2>
+          <h3 class="sky-align">Wireframes</h3>
+          <p class="wide bottom-margin">I started out with some rough sketches of how I wanted the app to look and function. I went through a few iterations before moving on to digital wireframes. I wanted this app to be minimal, easy to use, and about the user content/ interactions. I built the wireframes based on the most important features from earlier and tried to keep the design simple.</p>
+          <h3 class="center">Wireframes Sketches</h3>
+          <div class="center bottom-margin">
+            <a href="images/Decantr/sketches 1.jpg">
+              <img src="images/Decantr/sketches 1.jpg" class="Decantr-photos" alt="Decantr sketches one">
+            </a>
+            <a href="images/Decantr/sketches 2.jpg">
+              <img src="images/Decantr/sketches 2.jpg" class="Decantr-photos" alt="Decantr sketches two">
+            </a>
+            <a href="images/Decantr/sketches 3.jpg">
+              <img src="images/Decantr/sketches 3.jpg" class="Decantr-photos" alt="Decantr sketches three">
+            </a>
+          </div>
+          <h3 class="center">Wireframe Mockups</h3>
+          <div class="bottom-margin Decantr-wireframe-mockups">
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Home.jpg" alt="Digital wireframes">
+              <p>Home/ landing page</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Wine list.jpg" alt="Digital wireframes">
+              <p>Wine list</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Activity.jpg" alt="Digital wireframes">
+              <p>Activity</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Notifications.jpg" alt="Digital wireframes">
+              <p>Notifications</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Add Wine.jpg" alt="Digital wireframes">
+              <p>Add Wine</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Camera.jpg" alt="Digital wireframes">
+              <p>Camera</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Location.jpg" alt="Digital wireframes">
+              <p>Location</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Profile.jpg" alt="Digital wireframes">
+              <p>Profile</p>
+            </div>
+            <div class="sketch">
+              <img src="images/Decantr/wireframe mockups/Recommended.jpg" alt="Digital wireframes">
+              <p>Recommended</p>
+            </div>
+          </div>
+        </section>
+          <h2 class="bottom-margin">Branding</h2>
+        <section class="two-column">
+          <div class="branding">
+            <h3>Building the Brand</h3>
+            <p>Branding this product was difficult. I liked what the competition did with their branding and styles but I had to find a way to differentiate.</p>
+            <h4>Name & Logo</h4>
+            <p>I first created a list of words that are associated with wine. I then took my favorites and checked to see if they were taken. I narrowed it down to just a couple names and played around with some potential logos that went with the names. I ultimately decided to go with Decantr because I had some sketches of decanters that I liked. I created multiple logos using different decanter shapes and then took those logos and tried them out with different colors, sizes, and variations. I had two logos that I really liked but I ended up going with the logo that I felt would be more recognizable.</p>
+            <h4>Colors</h4>
+            <p>The most obvious color for a wine app is red but Vivino uses a nice red color. I also like what Delectable did with their gray and red colors. After looking at wine apps, websites, wine bottle labels, and a lot of testing color palettes on sample screens, I finally landed on a color palette that is simple and fun. I decided I would use color sparingly though, to give the app a minimal, almost Uber feel.</p>
+            <h4>Typography</h4>
+            <p>I chose Poppins to add character and interest to headers and titles. I chose Open Sans for all other text because it’s minimal, modern, and easy to read.</p>
+            <p class="bottom-margin">I also sketched some wine related illustrations for inspiration. Once these decisions had been made I built the Decantr style guide.</p>
+          </div>
+          <div>
+            <h3 class="brand-align">Style Guide</h3>
+            <div class="Decantr-style-guide bottom-margin">
+              <a href="images/Decantr/style guide/Logo.jpg">
+                <img src="images/Decantr/style guide/Logo.jpg" class="style-guide-img" alt="Decantr logo">
+              </a>
+              <a href="images/Decantr/style guide/Typography.jpg">
+                <img src="images/Decantr/style guide/Typography.jpg" class="style-guide-img" alt="Decantr logo">
+              </a>
+              <a href="images/Decantr/style guide/Font Showcase.jpg">
+                <img src="images/Decantr/style guide/Font Showcase.jpg" class="style-guide-img" alt="Decantr logo">
+              </a>
+              <a href="images/Decantr/style guide/Color.jpg">
+                <img src="images/Decantr/style guide/Color.jpg" class="style-guide-img" alt="Decantr logo">
+              </a>
+              <a href="images/Decantr/style guide/Sizing.jpg">
+                <img src="images/Decantr/style guide/Sizing.jpg" class="style-guide-img" alt="Decantr logo">
+              </a>
+              <a href="images/Decantr/style guide/Shapes.jpg">
+                <img src="images/Decantr/style guide/Shapes.jpg" class="style-guide-img" alt="Decantr logo">
+              </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="bottom-margin">Visual Design</h2>
+          <h3 class="sky-align">Mockups</h3>
+          <p class="bottom-margin wide">To create the mockups I took my wireframes and changed all the fonts to Poppins and Open Sans and added the colors. I tried using the colors in a few different ways . I wanted the app to be mostly black and white with the colors only used as accents. I also added mock photos of wine, users, and illustrations.</p>
+          <h3 class="bottom-margin-small center">Mockup iterations</h3>
+          <h4 class="center">Add a wine screen</h4>
+          <br>
+          <div class="center bottom-margin-small">
+            <a href="images/Decantr/mockups/Wine found.jpg">
+              <img src="images/Decantr/mockups/Wine found.jpg" class="two-iterations" alt="1st wine found screen">
+            </a>
+          </div>
+          <h4 class="center">Sign up screen</h4>
+          <br>
+          <div class="center bottom-margin-small">
+            <a href="images/Decantr/mockups/Sign up.jpg">
+              <img src="images/Decantr/mockups/Sign up.jpg" class="two-iterations" alt="1st sign up screen">
+            </a>
+          </div>
+          <h4 class="center">Search screen</h4>
+          <br>
+          <div class="center bottom-margin">
+            <a href="images/Decantr/mockups/Search.jpg">
+              <img src="images/Decantr/mockups/Search.jpg" class="two-iterations" alt="1st search screen">
+            </a>
+          </div>
+          <h3 class="sky-align">Prototype</h3>
+          <p class="center bottom-margin wide">To build the prototype I took my mockups and put them in InVision. I added the hotspots to the screens to make them functional and did some user testing.</p>
+        </section>
+        <section>
+          <h3 class="sky-align">Usability Testing</h3>
+          <p class="wide">Using the wireframe mockups, I created a clickable prototype on InVision. I conducted user tests via video chat and in person. I had the users show me how they would sign up for an account, add content to the account, and organize their content.</p>
+          <br>
+          <p class="wide bottom-margin">From the usability tests, I learned that I should include a quick user tutorial and add text to the email and password inputs for the sign up process.</p>
+          <div class="center">
+            <a href="https://invis.io/F2UBUD4X3R5" class="Decantr-button bottom-margin" title="Prototype">View Prototype</a>
+          </div>
+        </section>
+        <section class="Sky-Saves-Conclusion">
+          <h3 class="sky-align">Conclusion</h3>
+          <p class="wide">This was a fun and challenging project. I really enjoyed making the illustrations and building the brand. I also like how the bottom navigation bar turned out.</p>
+          <br>
+          <p class="wide">It was challenging to include everything I wanted on some of the screens without having them feel too crowded. I eventually solved this by added some scroll to a few of the screens and moving some of the options to the profile view.</p>
+          <br>
+          <p class="wide">Something that I learned from this project is the importance of user testing. There is always something that the users will do that you don’t anticipate. For instance on the camera screen I didn’t know how badly users would want to tap the button to change from “scan a label” to “take a photo” so I added an extra screen to the prototype so users could change the setting.</p>
+          <br>
+          <p class="wide">If I had more time I would have built a more robust prototype. I would have Included more screens like one explaining the wine charms in the profile. </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul class="skyfoot footmedia">
+        <li>
+          <a href="https://www.linkedin.com/in/sean-valenzuela-b5a9a9a0/" class="light" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Seanv57" class="light" target="_blank">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/seanv57/" class="light" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:seanv57@gmail.com" class="light" target="_blank">
+            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153536015-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-153536015-1');
+    </script>
+  </body>
+</html>

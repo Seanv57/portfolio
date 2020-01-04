@@ -21,7 +21,11 @@ h1, h2, h3, h4, p, .slogan {
 }
 
 .white {
-  color: #ffffff;
+  color: #fff;
+}
+
+.dark {
+  color: #000;
 }
 
 h1 {
@@ -102,6 +106,7 @@ header {
 }
 
 .my-logo:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   opacity: .8;
 }
 
@@ -122,7 +127,7 @@ header {
 .menu {
   display: none;
   list-style: none;
-  height: 12rem;
+  height: auto;
   width: 100%;
 }
 
@@ -174,7 +179,7 @@ footer ul {
 }
 
 .fa:hover {
-  color: #FE5757;
+  color: #e1e1e1;
 }
 
 /* Home page specific */
@@ -215,9 +220,10 @@ footer ul {
 .project {
   border-radius: 5px;
   margin: 2rem auto;
+  height: 30rem;
   text-align: center;
   width: 35rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .project p {
@@ -232,32 +238,38 @@ footer ul {
 .Sky-Saves-case-study-button {
   background-color: #fff;
   border-radius: 5px;
-  color: #689F2D;
+  color: #37474F;
   margin: 1rem;
   padding: 1rem 4rem;
 }
 
 .Sky-Saves-case-study-button:hover {
   background-color: #37474F;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #fff;
 }
 
-.Project-2 {
-  border: .2rem solid #2587FB;
-  padding-top: 4rem;
+.Decantr {
+  background-color: #fff;
+  padding-top: 5rem;
 }
 
-.Project-3 {
-  border: .2rem solid #2587FB;
-  padding-top: 4rem;
+.Decantr-logo-home {
+  width: 24rem;
 }
 
-.Project-4 {
-  border: .2rem solid #2587FB;
-  padding-top: 4rem;
+.Decantr-button {
+  background-color: #982649;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1rem 4rem;
 }
 
-/* Sky Saves Case Study specific */
+.Decantr-button:hover {
+  background-image: linear-gradient(#6B4E71, #982649);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/* Projects specific */
 
 .intro {
   font-size: 2.4rem;
@@ -265,12 +277,30 @@ footer ul {
   margin: 6rem auto;
 }
 
-.Sky-Saves-Case-Study {
+.projects {
   background-color: #ffffff;
   margin: 6rem auto 0;
   padding-bottom: 6rem;
 }
 
+.project-align {
+  display: block;
+  float: left;
+}
+
+.survey-pic {
+  width: 100%;
+}
+
+.two-iterations {
+  width: 30rem;
+}
+
+.two-iterations:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Sky Saves Case Study specific */
 #backToTop {
   display: none;
   position: fixed;
@@ -279,7 +309,7 @@ footer ul {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #37474F;
+background-color: #303033;
   color: #fff;
   cursor: pointer;
   padding: 1.5rem;
@@ -288,7 +318,8 @@ footer ul {
 }
 
 #backToTop:hover {
-  background-color: #49585A;
+  background-color: #FE5757;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .Sky-Saves-Logo {
@@ -312,11 +343,12 @@ footer ul {
 
 .Sky-Saves-button:hover {
   background-color: #37474F;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #fff;
 }
 
-.Sky-Saves-survey li {
-  text-indent: 2rem;
+.project-survey ul {
+  list-style-position: inside;
 }
 
 .Sky-Saves-persona {
@@ -357,32 +389,38 @@ footer ul {
   text-indent: 2rem;
 }
 
-.Sky-Saves-user-stories {
+.user-story-chart {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem;
   border-collapse: collapse;
   width: 100%;
 }
 
-.Sky-Saves-user-stories td, .Sky-Saves-user-stories th {
+.user-story-chart td, .user-story-chart th {
   border: .1rem solid #ddd;
   padding: .8rem;
 }
 
-.Sky-Saves-user-stories tr:nth-child(even){background-color: #f2f2f2;}
+.user-story-chart tr:nth-child(even){background-color: #f2f2f2;}
 
-.Sky-Saves-user-stories tr:hover {background-color: #ddd;}
+.user-story-chart tr:hover {background-color: #ddd;}
 
-.Sky-Saves-user-stories th {
+.user-story-chart th {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   text-align: left;
-  background-color: #689F2D;
   color: #fff;
 }
 
+.Sky-Saves-chart-color th{
+  background-color: #689F2D;
+}
+
 .user-flow {
-  width: 35rem;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  width: auto;
 }
 
 .Sky-Saves-old-sketches {
@@ -428,9 +466,17 @@ footer ul {
   width: 15rem;
 }
 
+.style-guide-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
 .mockup-img {
   margin: 1rem;
   width: 10rem;
+}
+
+.mockup-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .bottom-margin {
@@ -439,6 +485,10 @@ footer ul {
 
 .bottom-margin-small {
   margin-bottom: 3rem;
+}
+
+.top-margin-small {
+  margin-top: 3rem;
 }
 
 .desktop-only {
@@ -470,7 +520,7 @@ footer ul {
 
 .process-line {
   border-top: .1rem solid #000;
-  width: 30rem;
+  width: 80%;
 }
 
 .skynav, .skyfoot {
@@ -481,6 +531,50 @@ footer ul {
 .skynav .menu {
   margin-top: 0;
 }
+
+/* Decantr specific */
+.Decantr-logo {
+  padding-top: 6rem;
+}
+
+.Decantr-iphonex {
+text-align: center;
+}
+
+.Decantr-mockup {
+  margin: 1rem;
+  width: 30rem;
+}
+
+.Decantr-photos {
+  margin: 1rem;
+  width: 10rem;
+}
+
+.Decantr-photos:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Decantr-chart-color th{
+  background-color: #982649;
+}
+
+.Decantr-style-guide {
+  padding: 3rem;
+  text-align: center;
+}
+
+.Decantr-wireframe-mockups img {
+  width: 30rem;
+}
+
+.Decantr-wireframe-mockups {
+  overflow: auto;
+  height: 66rem;
+  width: 100%;
+  white-space: nowrap;
+}
+
 
 /* About page specific */
 .about-content {
@@ -574,7 +668,9 @@ label {
 }
 
 .contact-send:hover {
-  opacity: .8;
+  background-color: #1C67C0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #e1e1e1;
 }
 
 .contact-pic {
@@ -682,7 +778,7 @@ label {
     z-index: -2;
   }
 
-  /* For Contact page: */
+  /* For Contact page Tablet: */
   form {
     padding: 3rem;
     width: 48rem;
@@ -696,7 +792,7 @@ label {
     width: 42rem;
   }
 
-  /* For Sky Saves Page */
+  /* For Sky Saves Tablet */
   .personas {
     margin: auto;
     width: 80%;
@@ -728,7 +824,7 @@ label {
     text-align: left;
   }
 
-  .Sky-Saves-user-stories {
+  .user-story-chart {
     width: 80%;
   }
 
@@ -739,6 +835,12 @@ label {
   .mockup-img {
     width: 15rem;
   }
+
+/* For Decantr tablet: */
+  .Decantr-photos {
+    width: 15rem;
+  }
+
 }
 /* For desktop: */
 @media only screen and (min-width: 768px) {
@@ -836,33 +938,28 @@ label {
     margin-left: 42%;
   }
 
-  .Case-studies {
+  #Case-studies {
     border: .2rem solid #2587FB;
     border-radius: 5px;
+    height: auto;
     margin: 6rem 6%;
-    height: 60rem;
+    padding: 0 3rem;
+    height: 70rem;
     width: 88%;
-    z-index: -1;
-  }
-
-  .projects {
-    margin: 5% auto;
-    width: 66rem;
   }
 
   .project {
     display: block;
     float: left;
-    margin: 1%;
+    margin: 1rem;
   }
 
-.contact-nav {
-  border-bottom: .2rem solid #2587FB;
+  .contact-nav {
+    border-bottom: .2rem solid #2587FB;
+  }
 }
 
-}
-
-/* Sky Saves Desktop */
+/* Projects Desktop */
 @media only screen and (min-width: 900px) {
 
   h1 {
@@ -876,7 +973,7 @@ label {
     width: 50rem;
   }
 
-  .Sky-Saves-content {
+  .project-content {
     margin: 0 auto;
     width: 90rem;
   }
@@ -903,7 +1000,7 @@ label {
     margin-left: 7rem;
   }
 
-  .Sky-Saves-user-stories {
+  .user-story-chart {
     width: 100%;
   }
 
@@ -913,10 +1010,6 @@ label {
 
   .mockup-img {
     width: 20rem;
-  }
-
-  .bottom-margin-small {
-    margin-bottom: 6rem;
   }
 
   .one-column {
@@ -934,7 +1027,7 @@ label {
     grid-template-columns: 30rem 30rem 30rem;
   }
 
-  .sky-left, .sky-right {
+  .left-align, .sky-right {
     width: 37.5rem;
   }
 
@@ -959,7 +1052,7 @@ label {
     width: 56rem;
   }
 
-  .sky-left {
+  .left-align {
     margin-left: 3rem;
     margin-right: 4.5rem;
     position: relative;
@@ -990,6 +1083,14 @@ label {
 
   .style-guide-img {
     width: 20rem;
+  }
+  /* Decantr desktop: */
+  .Decantr-photos {
+    width: 20rem;
+  }
+
+  .Decantr-style-guide .style-guide-img {
+    width: 22rem;
   }
 }
 /* For About desktop: */
@@ -1058,10 +1159,6 @@ label {
   .container {
     margin: auto;
     width: 144rem;
-  }
-
-  .Sky-Saves-content {
-    width: 90rem;
   }
 
   .mockup-img {
