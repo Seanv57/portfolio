@@ -175,7 +175,7 @@ footer ul {
 .footmedia li a {
   color: #e1e1e1;
   font-size: 3rem;
-  padding: 3rem;
+  margin: 0 3rem;
 }
 
 .fa:hover {
@@ -311,7 +311,7 @@ footer ul {
 #backToTop {
   display: none;
   position: fixed;
-  bottom: 1rem;
+  bottom: 6rem;
   right: 0;
   z-index: 99;
   border: none;
@@ -624,6 +624,50 @@ text-align: center;
 .Busybus-chart-color th{
   background-color: #145180;
 }
+/* Quick Project Specific */
+.q-projects {
+  background-color: #4A1942;
+}
+
+.q-projects-title {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 3.5rem auto;
+}
+
+.q-projects-button {
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  color: #2E1C2B;
+  height: 4.6rem;
+  padding: 1rem 4rem;
+}
+
+.q-projects-button:hover {
+  background-color: #893168;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #D0DCE5;
+}
+
+.q-projects-header {
+  color: #4A1942;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 6rem;
+}
+
+.fun-fact {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.q-project-photos {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 100%;
+}
+
 
 /* About page specific */
 .about-content {
@@ -768,8 +812,7 @@ label {
   }
 
   .footmedia li a {
-    padding: 6rem
-    ;
+    margin: 0 6rem;
   }
 
 /* About Page Tablet */
@@ -842,7 +885,6 @@ label {
   }
   /* For Projects Tablet */
   #backToTop {
-    bottom: 2rem;
     right: 3rem;
   }
   .project-photos {
@@ -1207,6 +1249,7 @@ label {
     grid-column-start: 1;
     margin-bottom: -.3rem;
   }
+
 }
 /* For wide desktop: */
 @media only screen and (min-width: 1440px) {
