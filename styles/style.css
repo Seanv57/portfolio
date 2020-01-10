@@ -10,7 +10,7 @@ body {
   background-color: #4A4B4F;
 }
 
-h1, h2, h3, h4, p, .slogan {
+h1, h2, h3, h4, p {
   color: #4A4B4F;
   margin: 0 auto;
   width: 33rem;
@@ -68,10 +68,6 @@ p, a {
   font-weight: 400;
 }
 
-p {
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
 }
@@ -81,8 +77,15 @@ a {
   justify-content: center;
 }
 
-/* Navigation Bar specific*/
+.tab-only {
+  display: none;
+}
 
+.txt-sml {
+  font-size: 1.2rem;
+}
+
+/* Navigation Bar specific*/
 header {
   background-color: #4A4B4F;
   border-bottom: .2rem solid #2587FB;
@@ -91,10 +94,6 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
-}
-
-.tab-only {
-  display: none;
 }
 
 .my-logo {
@@ -118,10 +117,6 @@ header {
   float: right;
   margin-right: 8%;
   margin-top: 1.5rem;
-}
-
-.icon:hover {
-  color: #fff;
 }
 
 .menu {
@@ -161,6 +156,10 @@ nav li {
   width: 100%;
 }
 
+.icon:hover {
+  color: #e1e1e1;
+}
+
 /* Footer specific */
 footer ul {
   border-top: .2rem solid #2587FB;
@@ -172,14 +171,14 @@ footer ul {
   width: 100%;
 }
 
-.footmedia li a {
+.footmedia a {
   color: #e1e1e1;
   font-size: 3rem;
   margin: 0 3rem;
 }
 
-.fa:hover {
-  color: #e1e1e1;
+.footmedia i:hover {
+  color: #FE5757;
 }
 
 /* Home page specific */
@@ -190,7 +189,7 @@ footer ul {
 .my-title {
   margin: 0 auto;
   text-align: center;
-  width:30rem;
+  width: 30rem;
 }
 
 .home-box h1 {
@@ -229,7 +228,7 @@ footer ul {
 
 .project p {
   margin-top: 2rem;
-  width: 90%;
+  width: 80%;
 }
 
 .Sky-Saves {
@@ -624,6 +623,7 @@ text-align: center;
 .Busybus-chart-color th{
   background-color: #145180;
 }
+
 /* Quick Project Specific */
 .q-projects {
   background-color: #4A1942;
@@ -634,6 +634,33 @@ text-align: center;
   font-size: 3.5rem;
   font-weight: bold;
   margin: 3.5rem auto;
+}
+
+.smart-watch {
+  height: auto;
+  width: 35rem;
+}
+
+.watch-cred {
+  font-size: 1.2rem;
+  text-align: right;
+  width: 35rem
+}
+
+.hands-pic {
+  height: auto;
+  width: 80%;
+}
+
+.hands-cred {
+  font-size: 1.2rem;
+  margin-right: 10%;
+  text-align: right;
+}
+
+.wdth-80 {
+  text-align: center;
+  width: 80%;
 }
 
 .q-projects-button {
@@ -665,9 +692,9 @@ text-align: center;
 
 .q-project-photos {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: auto;
   width: 100%;
 }
-
 
 /* About page specific */
 .about-content {
@@ -811,7 +838,7 @@ label {
     display: none;
   }
 
-  .footmedia li a {
+  .footmedia a {
     margin: 0 6rem;
   }
 
@@ -887,6 +914,7 @@ label {
   #backToTop {
     right: 3rem;
   }
+
   .project-photos {
     width: 15rem;
   }
@@ -934,13 +962,9 @@ label {
   .mockup-img {
     width: 15rem;
   }
-
 }
 /* For desktop: */
 @media only screen and (min-width: 768px) {
-  h1, h2, h3, h4, p, .slogan {
-    color: #4A4B4F;
-  }
 
   h1 {
     font-size: 4rem;
@@ -1048,6 +1072,10 @@ label {
 
 /* Projects Desktop */
 @media only screen and (min-width: 900px) {
+
+  .project-mockup {
+    margin: 4rem;
+  }
 
   .project-align {
     display: grid;
