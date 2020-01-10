@@ -637,7 +637,17 @@ text-align: center;
 }
 
 .smart-watch {
-  height: auto;
+  height: 62.2rem;
+  width: 35rem;
+}
+
+.hands-pic {
+  height: 23.3rem;
+  width: 35rem;
+}
+
+.cl-sketches {
+  height: 26.25rem;
   width: 35rem;
 }
 
@@ -647,15 +657,10 @@ text-align: center;
   width: 35rem
 }
 
-.hands-pic {
-  height: auto;
-  width: 80%;
-}
-
 .hands-cred {
   font-size: 1.2rem;
-  margin-right: 10%;
   text-align: right;
+  width: 35rem;
 }
 
 .wdth-80 {
@@ -962,6 +967,21 @@ label {
   .mockup-img {
     width: 15rem;
   }
+/* For Quick projects */
+
+  .hands-pic {
+    height: 32rem;
+    width: 48rem;
+  }
+
+  .cl-sketches {
+    height: 36rem;
+    width: 48rem;
+  }
+
+  .hands-cred {
+    width: 48rem;
+  }
 }
 /* For desktop: */
 @media only screen and (min-width: 768px) {
@@ -1072,6 +1092,11 @@ label {
 
 /* Projects Desktop */
 @media only screen and (min-width: 900px) {
+
+  .cl-sketches {
+    height: 54rem;
+    width: 72rem;
+  }
 
   .project-mockup {
     margin: 4rem;
