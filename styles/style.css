@@ -1300,6 +1300,7 @@ label {
 
   .prickly {
     grid-column-start: 1;
+    padding-left: 50%;
     margin-bottom: -.3rem;
   }
 
