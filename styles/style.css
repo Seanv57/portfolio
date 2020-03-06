@@ -92,6 +92,7 @@ header {
   border-bottom: .2rem solid #2587FB;
   height: 6rem;
   position: fixed;
+  left: 0;
   top: 0;
   width: 100%;
   z-index: 1;
