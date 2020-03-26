@@ -8,18 +8,22 @@ let burger = document.querySelector(".icon");
 
 burger.addEventListener("click", toggleClass);
 
-topbutton = document.getElementById("backToTop");
+var topButton = document.getElementById("backToTop");
 
 //Back to top button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topbutton.style.display = "block";
-  } else {
-    topbutton.style.display = "none";
-  }
+if (topButton != null) {
+  window.onscroll = function() {scrollFunction()};
 }
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  }
+
+
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
