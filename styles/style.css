@@ -86,10 +86,27 @@ a {
   font-size: 1.2rem;
 }
 
+/* Bounce animation for icons*/
+@keyframes bounce {
+0% {
+-webkit-transform: translateY(0);
+transform: translateY(0);
+}
+50% {
+-webkit-transform: translateY(-6px);
+transform: translateY(-6px);
+}
+100% {
+-webkit-transform: translateY(0);
+transform: translateY(0);
+}
+}
+
 /* Navigation Bar specific*/
 header {
   background-color: #4A4B4F;
   border-bottom: .2rem solid #2587FB;
+  box-shadow: 0 2rem 4rem rgba(0,0,0,.1);
   height: 6rem;
   position: fixed;
   left: 0;
@@ -139,6 +156,9 @@ header {
 
 .menu a:hover {
   color: #FE5757;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 1s;
 }
 
 nav ul {
@@ -159,7 +179,8 @@ nav li {
 }
 
 .icon:hover {
-  color: #e1e1e1;
+  animation: bounce 1s infinite;
+  color: #2587FB;
 }
 
 /* Footer specific */
@@ -180,6 +201,7 @@ footer ul {
 }
 
 .footmedia i:hover {
+  animation: bounce 1s infinite;
   color: #FE5757;
 }
 
@@ -189,6 +211,7 @@ footer ul {
 }
 
 .my-title {
+  font-size: 2rem;
   margin: 0 auto;
   text-align: center;
   width: 30rem;
@@ -220,6 +243,7 @@ footer ul {
 
 .project {
   border-radius: 5px;
+  box-shadow: 4rem 4rem 6rem rgba(0,0,0,.2);
   display: grid;
   grid-template-rows: 12rem 12rem 8rem;
   margin: 2rem auto;
@@ -248,7 +272,7 @@ footer ul {
 
 .Sky-Saves-case-study-button:hover {
   background-color: #37474F;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
   color: #fff;
 }
 
@@ -272,7 +296,7 @@ footer ul {
 
 .Decantr-button:hover {
   background-image: linear-gradient(#6B4E71, #982649);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
 }
 
 .project-intro {
@@ -327,7 +351,7 @@ footer ul {
 
 #backToTop:hover {
   background-color: #FE5757;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 1rem .5rem rgba(0,0,0,0.2);
 }
 
 /* Sky Saves Case Study specific */
@@ -353,7 +377,7 @@ footer ul {
 
 .Sky-Saves-button:hover {
   background-color: #37474F;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
   color: #fff;
 }
 
@@ -362,7 +386,7 @@ footer ul {
 }
 
 .Sky-Saves-persona {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 1rem 1rem rgba(0,0,0,0.1);
   width: 100%;
   padding: 6rem 1rem;
 }
@@ -839,6 +863,9 @@ label {
   .tab-only a:hover {
     color: #fff;
     background-color: #FE5757;
+    font-weight: bold;
+    padding: 1.5rem;
+    transition: 1s;
   }
 
   .no-tab {
