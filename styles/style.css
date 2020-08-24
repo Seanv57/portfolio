@@ -741,6 +741,11 @@ main {
 /* Mini Projects */
 .cl-background {
   background-color: #551A8B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .photo-cred {
