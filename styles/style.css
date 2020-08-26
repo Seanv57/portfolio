@@ -34,6 +34,11 @@ h4 {
   font-weight: lighter;
 }
 
+h5 {
+  font-size: 2.2rem;
+  font-family: "source sans pro", serif;
+}
+
 p, a, li {
   font-size: 1.8rem;
   font-family: "source sans pro", serif;
@@ -87,6 +92,10 @@ p, a, li {
 
 .light {
   color: #FDFFFC;
+}
+
+.dark {
+  color: #011627;
 }
 
 .botmargsml {
@@ -299,30 +308,26 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
 
 .Decantr1 {
-  max-height: 70%;
-  width: auto;
+  width: 24rem;
 }
 
 .Decantr1:hover {
-  box-shadow: 6rem 6rem 6rem rgba(0, 0, 0, 0.4);
+  filter: drop-shadow(6rem 6rem 6rem rgba(0, 0, 0, 0.4));
 }
 
 .Decantr2 {
   display: none;
-  max-height: 70%;
-  width: auto;
 }
 
 .Decantr3 {
   display: none;
-  max-height: 70%;
-  width: auto;
 }
 
 .SkySaves {
@@ -330,17 +335,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
 }
 
 .SkySaves1 {
-  max-width: 80%;
-  height: auto;
+  width: 30rem;
 }
 
 .SkySaves1:hover {
-  opacity: 0.8;
+  filter: drop-shadow(6rem 6rem 6rem rgba(0, 0, 0, 0.4));
 }
 
 .BusyBus {
@@ -353,12 +358,11 @@ main {
 }
 
 .BusyBus1 {
-  max-height: 70%;
-  width: auto;
+  width: 24rem;
 }
 
 .BusyBus1:hover {
-  box-shadow: 6rem 6rem 6rem rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(6rem 6rem 6rem rgba(0, 0, 0, 0.4));
 }
 
 .MiniProjects {
@@ -366,13 +370,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
 
 .MiniProjects1 {
-  max-width: 80%;
-  height: auto;
+  width: 100%;
 }
 
 .MiniProjects1:hover {
@@ -552,7 +556,7 @@ main {
   border-radius: 1rem;
   box-shadow: 0 0 6rem rgba(0, 0, 0, 0.25);
   margin: 6rem auto;
-  width: 95%;
+  max-width: 95%;
 }
 
 .Project-example {
@@ -797,28 +801,45 @@ main {
     justify-content: space-around;
   }
 
-  .Decantr1 {
+  .Decantr1, .BusyBus1 {
+    width: 30rem;
+  }
+
+  .order1 {
+    order: 1;
+  }
+
+  .order2 {
     order: 2;
   }
 
   .Decantr2 {
     display: flex;
-    order: 1;
-    transform: translatey(50%);
+    position: relative;
+    bottom: -60rem;
+    width: 30rem;
   }
 
   .SkySaves1, .MiniProjects1 {
-      width: 50rem;
+    width: 50rem;
   }
-
 }
 
 /* For About desktop: */
 @media only screen and (min-width: 900px) {
+  .order3 {
+    order: 3;
+  }
+
   .Decantr3 {
     display: flex;
-    order: 3;
-    transform: translatey(-50%);
+    position: relative;
+    top: -60rem;
+    width: 30rem;
+  }
+
+  .MiniProjects1 {
+    width: 70rem;
   }
 
   h1 {
