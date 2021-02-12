@@ -1,16 +1,23 @@
 // Menu navigation
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelector(".menu-items");
-const links = document.querySelectorAll(".menu-items li");
-const work = document.querySelector(".work");
+const menuSlide = () => {
+  const menu = document.querySelector('.menu');
+  const nav = document.querySelector('.menu-items');
+  const menuItems = document.querySelectorAll('.menu-items li');
 
-menu.addEventListener("click", () => {
-  menu.classList.toggle("menux");
-  menuItems.classList.toggle("open");
-  links.forEach(link => {
-    link.classList.toggle("fade");
+  menu.addEventListener('click', () => {
+    nav.classList.toggle('menu-active');
+    menuItems.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+          link.style.animation = `menuItemFade 0.5s ease forwards ${index / 5 + 0.3}s`;
+        }
+    });
+    menu.classList.toggle('toggle');
   });
-});
+}
+
+menuSlide();
 
 // Parallax
 window.addEventListener('scroll', function(e) {
