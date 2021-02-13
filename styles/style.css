@@ -9,6 +9,7 @@ html {
 body {
   background-color: #011627;
   color: #FDFFFC;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -158,7 +159,7 @@ header {
 
 .container {
   position: relative;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 .my-logo {
@@ -391,6 +392,7 @@ main {
   align-items: center;
   justify-content: center;
   margin: 10rem auto;
+  width: 23rem;
 }
 
 .Dribbble a {
@@ -782,6 +784,10 @@ main {
 @media only screen and (min-width: 600px) {
   p, li {
     max-width: 50rem;
+  }
+
+  .Dribbble {
+    width: 50rem;
   }
 
   .Decantr {
