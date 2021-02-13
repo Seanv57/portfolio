@@ -9,14 +9,13 @@ html {
 body {
   background-color: #011627;
   color: #FDFFFC;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
   font-size: 4rem;
   font-family: "montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: .2rem;
 }
 
@@ -29,6 +28,7 @@ h2 {
 h3 {
   font-size: 2.8rem;
   font-family: "montserrat", sans-serif;
+  font-weight: bold;
   letter-spacing: .2rem;
 }
 
@@ -156,6 +156,11 @@ header {
   height: 8.8rem;
 }
 
+.container {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .my-logo {
   cursor: pointer;
   margin-left: 3rem;
@@ -214,7 +219,7 @@ header {
   position: absolute;
   right: 0rem;
   top: 8.8rem;
-  height: 60%;
+  height: 60vh;
   width: 100%;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
@@ -383,6 +388,7 @@ main {
 
 .Dribbble {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 10rem auto;
 }
@@ -428,8 +434,11 @@ main {
 .contactpage {
   background-color: #FDFFFC;
   color: #011627;
-  padding-top: 16rem;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 86vh;
   width: 100vw;
 }
 
