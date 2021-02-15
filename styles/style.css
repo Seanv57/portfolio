@@ -419,17 +419,17 @@ main {
 /* About Me Page */
 .aboutpage {
   background-color: #FDFFFC;
-  padding-top: 16rem;
 }
 
 .aboutme {
   color: #011627;
-  padding: 6rem 3rem 10rem;
+  margin: 10rem 3rem;
 }
 
 .hike {
   border: 1rem solid #2EC4B6;
   border-radius: .5rem;
+  margin-top: 10rem;
 }
 
 /* Contact Page */
@@ -743,8 +743,6 @@ main {
 
 .photo-cred {
   font-size: 1.2rem;
-  position: absolute;
-  right: 1rem;
 }
 
 .q-projects-button {
