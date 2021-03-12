@@ -9,6 +9,7 @@ html {
 body {
   background-color: #011627;
   color: #FDFFFC;
+  overflow-x: hidden!important;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -17,20 +18,21 @@ h1 {
   font-size: 4rem;
   font-family: "montserrat", sans-serif;
   font-weight: bold;
-  letter-spacing: .2rem;
+  letter-spacing: .3rem;
 }
 
 h2 {
   font-size: 3.4rem;
   font-family: "montserrat", sans-serif;
-  letter-spacing: .2rem;
+  letter-spacing: .3rem;
+  line-height: 4.2rem;
 }
 
 h3 {
   font-size: 2.8rem;
   font-family: "montserrat", sans-serif;
-  font-weight: bold;
-  letter-spacing: .2rem;
+  letter-spacing: .3rem;
+  line-height: 3.6rem;
 }
 
 h4 {
@@ -42,13 +44,14 @@ h4 {
 h5 {
   font-size: 2.4rem;
   font-family: "source sans pro", sans-serif;
+  letter-spacing: .2rem;
   line-height: 3rem;
 }
 
 p, a, li {
   font-size: 2rem;
   font-family: "source sans pro", sans-serif;
-  line-height: 2.4rem;
+  line-height: 2.8rem;
 }
 
 .center {
@@ -61,6 +64,10 @@ p, a, li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .title-background {
@@ -106,23 +113,27 @@ p, a, li {
 }
 
 .botmargsml {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.botmargmed {
+  margin-bottom: 5rem;
 }
 
 .botmarglrg {
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 
 .topmarglrg {
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .margins {
-  margin: 6rem 2rem;
+  margin: 10rem 2rem 0 2rem;
 }
 
 .topnbotmarg {
-  margin: 6rem auto;
+  margin: 10rem auto;
 }
 
 .halfscrntop {
@@ -159,7 +170,6 @@ header {
 
 .container {
   position: relative;
-  overflow-x: hidden!important;
 }
 
 .my-logo {
@@ -305,6 +315,93 @@ main {
 
 .intro h1 {
   margin-bottom: .8rem;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.mvart-link a {
+  cursor: pointer;
+  color: #FDFFFC;
+  font-style: none;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.mvart-link a:hover {
+  font-style: italic;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  max-width: 600px;
+}
+
+.cards {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: .3rem;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.47);
+}
+
+#item-1:checked ~ .cards #demo-5, #item-2:checked ~ .cards #demo-1, #item-3:checked ~ .cards #demo-2, #item-4:checked ~ .cards #demo-3, #item-5:checked ~ .cards #demo-4 {
+  transform: translatex(-40%) scale(.8);
+  z-index: 1;
+}
+
+#item-1:checked ~ .cards #demo-2, #item-2:checked ~ .cards #demo-3, #item-3:checked ~ .cards #demo-4, #item-4:checked ~ .cards #demo-5, #item-5:checked ~ .cards #demo-1 {
+  transform: translatex(40%) scale(.8);
+  z-index: 1;
+}
+
+#item-1:checked ~ .cards #demo-1, #item-2:checked ~ .cards #demo-2, #item-3:checked ~ .cards #demo-3, #item-4:checked ~ .cards #demo-4, #item-5:checked ~ .cards #demo-5 {
+  transform: translatex(0) scale(1);
+  z-index: 2;
+}
+
+#item-1:checked ~ .cards #demo-4, #item-2:checked ~ .cards #demo-5, #item-3:checked ~ .cards #demo-1, #item-4:checked ~ .cards #demo-2, #item-5:checked ~ .cards #demo-3 {
+  transform: translatex(-60%) scale(.6);
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #demo-3, #item-2:checked ~ .cards #demo-4, #item-3:checked ~ .cards #demo-5, #item-4:checked ~ .cards #demo-1, #item-5:checked ~ .cards #demo-2 {
+  transform: translatex(60%) scale(.6);
+  z-index: 0;
+}
+
+.mvart {
+  background-color: #386280;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  height: 100vh;
+  width: 100%;
 }
 
 .Decantr {
@@ -470,11 +567,12 @@ main {
   font-weight: 400;
   margin-top: 3rem;
   padding: 1rem 5rem;
+  transition: .5s;
 }
 
 .contact-send:hover {
+  background-color: #239589;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
-  font-weight: 600;
 }
 
 /* Project Pages */
@@ -496,14 +594,17 @@ main {
   background-color: #011627;
   color: #FDFFFC;
   cursor: pointer;
+  opacity: .4;
   padding: 1.5rem;
   border-radius: .5rem;
   font-size: 1.2rem;
+  transition: .4s;
 }
 
 #backToTop:hover {
   background-color: #2EC4B6;
   box-shadow: 0 1rem 1rem .5rem rgba(0,0,0,0.2);
+  opacity: 1;
 }
 
 .process-line {
@@ -515,6 +616,7 @@ main {
   filter: brightness(50%);
   overflow: hidden;
   height: auto;
+  width: 100%;
   max-width: 100rem;
 }
 
@@ -527,6 +629,16 @@ main {
   box-shadow: 0 0 6rem rgba(0, 0, 0, 0.25);
 }
 
+.two-imgs {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.two-imgs img {
+  margin: 3rem;
+}
+
 .project-btn {
   background-color: #2EC4B6;
   border-radius: 5px;
@@ -535,11 +647,13 @@ main {
   height: 4.6rem;
   padding: 1rem 4rem;
   text-decoration: none;
+  transition: .4s;
 }
 
 .project-btn:hover {
   box-shadow: 0 0 6rem rgba(0, 0, 0, 0.25);
-  font-weight: 600;
+  background-color: #239589;
+  transform:scale(1.2,1.2) translate3d(0,0,0);
 }
 
 .Project-pics {
@@ -548,6 +662,20 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100rem;
+}
+
+.mobile-projects {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 2rem 0 2rem;
+  max-height: 100%;
+  max-width: 30rem;
+}
+
+.projects-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .Project-list {
@@ -572,6 +700,52 @@ main {
   margin-bottom: 6rem;
 }
 
+/* MVart */
+.mvart-logo {
+  display: flex;
+  align-items: center;
+  height: 30rem;
+}
+/*
+.imac-scroll {
+  background-image: url('../images/mvart/Home 3.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+*/
+.mvart-btn {
+  background-color: #386280;
+  border-radius: 5px;
+  color: #fff;
+  height: 4.6rem;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.mvart-btn:hover {
+  background-color: #254155;
+  box-shadow: 0 0 6rem rgba(0,0,0,0.25);
+}
+
+.mvart-background {
+  background-color: #386280;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.mvart-background img {
+  margin: 3rem;
+  max-width: 50rem;
+  width: 100%;
+}
+
 /* Decantr */
 .Decantr-logo {
   display: flex;
@@ -587,6 +761,7 @@ main {
   height: 4.6rem;
   padding: 1rem 4rem;
   text-decoration: none;
+  transition: .4s;
 }
 
 .Decantr-button:hover {
@@ -647,8 +822,7 @@ main {
 .project-intro {
   display: flex;
   align-items: center;
-  height: 40rem;
-  margin: auto 3rem;
+  margin: 5rem;
 }
 
 .SkySaves-background {
@@ -670,9 +844,9 @@ main {
   color: #ffffff;
   height: 4.6rem;
   padding: 1rem 5rem;
-  margin: 0 auto 6rem;
   text-align: center;
   text-decoration: none;
+  transition: .4s;
 }
 
 .SkySaves-btn:hover {
@@ -692,13 +866,14 @@ main {
   background-color: #145180;
 }
 
+.BusyBus-intro {
+  margin: 0 2rem;
+}
+
 .BusyBus-background {
   background-color: #145180;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  width: 100vw;
 }
 
 .BusyBus-btn {
@@ -707,9 +882,9 @@ main {
   color: #fff;
   height: 4.6rem;
   padding: 1rem 4rem;
-  margin: 0 auto 6rem;
   text-align: center;
   text-decoration: none;
+  transition: .4s;
 }
 
 .BusyBus-btn:hover {
@@ -732,6 +907,16 @@ main {
 }
 
 /* Mini Projects */
+.q-projects-header {
+  color: #011627;
+  font-size: 5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+}
+
 .cl-background {
   background-color: #551A8B;
   display: flex;
@@ -752,18 +937,12 @@ main {
   height: 4.6rem;
   padding: 1rem 4rem;
   text-decoration: none;
+  transition: .4s;
 }
 
 .q-projects-button:hover {
   background-color: #772B5A;
   box-shadow: 0 0 6rem rgba(0,0,0,0.25);
-}
-
-.q-projects-header {
-  color: #011627;
-  font-size: 4rem;
-  font-weight: bold;
-  padding-top: 6rem;
 }
 
 .fun-fact {
@@ -782,6 +961,10 @@ main {
 @media only screen and (min-width: 600px) {
   p, li {
     max-width: 50rem;
+  }
+
+  .card {
+    width: 70%;
   }
 
   .Dribbble {
@@ -824,25 +1007,33 @@ main {
 @media only screen and (min-width: 900px) {
   header {
   margin: 0 6rem;
-}
+  }
 
-.menu {
-  display: none;
-}
+  .menu {
+    display: none;
+  }
 
-.menu-items {
-  flex-direction: row;
-  height: auto;
-  right: 6rem;
-  top: auto;
-  width: 40rem;
-  transform: translateX(0%);
-}
+  .menu-items {
+    flex-direction: row;
+    height: auto;
+    right: 6rem;
+    top: auto;
+    width: 40rem;
+    transform: translateX(0%);
+  }
 
-.menu-items li {
-  opacity: 1;
-  position: relative;
-}
+  .menu-items li {
+    opacity: 1;
+    position: relative;
+  }
+
+  .imac-scroll {
+    background-size: 60rem;
+  }
+
+  .card {
+    width: 100%;
+  }
 
   .order3 {
     order: 3;
@@ -867,6 +1058,18 @@ main {
     width: 36rem;
   }
 
+  .projects-row {
+    flex-direction: row;
+  }
+
+  .BusyBus-background {
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+
+  .two-imgs {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -885,5 +1088,11 @@ main {
 
   .footmedia {
     width: 100rem;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .mvart-background {
+    flex-direction: row;
   }
 }
