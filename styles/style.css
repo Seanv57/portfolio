@@ -293,6 +293,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 80vh;
+  padding: 0 2rem;
 }
 
 .intro h1 {
@@ -510,6 +511,10 @@ input[type=radio] {
   margin-top: 10rem;
 }
 
+.aboutme h3 {
+  font-weight: 600;
+}
+
 /* Contact Page */
 .contactpage {
   background-color: #FDFFFC;
@@ -522,12 +527,18 @@ input[type=radio] {
   width: 100vw;
 }
 
+.contactpage h3 {
+  text-align: center;
+  width: 75vw;
+}
+
 .contact-input {
   border-style: none;
   border-bottom: .2rem solid #818181;
   font-size: 2.4rem;
   font-family: "source sans pro", serif;
   margin-bottom: 3rem;
+  outline: none;
   width: 75vw;
   max-width: 60rem;
 }
